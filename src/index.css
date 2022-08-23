@@ -1,13 +1,132 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root{
+  --color-bg: #FFFFFF;
+  --color-bg-variant: #9C4D6A;
+  --color-secondary: #F69090;
+  --header-color: #F1F1F1;
+  --color-primary: #DE3636;
+  --color-primary-variant: #EE1B1B;
+  --color-text: #212121;
+  --color-login: #8F8F8F;
+
+  --transition: all 400ems ease ;
+
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+body{
+  background: var(--color-bg);
+  line-height: 1.7rem;
+  font-family: "Poppins", sans-serif;
+  color: var(--color-primary);
+}
+
+/*==================GENERAL STYLES/*==================*/
+.container{
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+  font-weight: 500;
+}
+
+h1{
+  font-size: 3rem;
+}
+
+section{
+  margin-top: 4rem;
+  height: 75vh;
+}
+
+section > h2,
+section > h5{
+  text-align: left;
+  color: var(--color-primary)
+}
+
+section > h2 {
+  color: var(--color-text);
+  margin-bottom: 2.5rem;
+}
+
+.text-light{
+  color: var(--color-bg);
+}
+
+a{
+  color: var(--color-secondary);
+}
+
+a:hover{
+  color: #F69090;
+}
+
+.btn{
+  width: max-content;
+  display: inline-block;
+  color: var(--color-primary-variant);
+  padding: 0.7 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--color-login);
+  transition: var(--transition);
+}
+
+.btn-primary{
+  background: var(--color-login);
+  color: var(--color-bg);
+}
+
+img{
+  display: flex;
+  width: 60px;  
+}
+
+/*============ MEDIA QUERY (MEDIUM DEVICES)============*/
+@media screen and (max-width:1024px){
+  .container{
+    width: var(--container-width-md);
+  }
+
+  section{
+    margin-top: 10rem;
+  }
+}
+
+/*============ MEDIA QUERY (SMALL DEVICES)============*/
+@media screen and (max-width:600px){
+  .container{
+    width: var(--container-width-sm);
+  }
+
+  section > h2 {
+    margin-bottom: 2rem;
+  }
 }

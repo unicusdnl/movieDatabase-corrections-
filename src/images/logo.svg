@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="648" height="128" viewBox="0 0 648 128">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 75px;
+        text-anchor: middle;
+        fill: #fff;
+        font-family: Poppins;
+        font-weight: 300;
+      }
+
+      .cls-2 {
+        fill: #e66767;
+        font-weight: 600;
+      }
+    </style>
+  </defs>
+  <text id="movieDatabase" class="cls-1" x="346" y="84"><tspan x="346">movie<tspan class="cls-2">Database</tspan></tspan></text>
+</svg>

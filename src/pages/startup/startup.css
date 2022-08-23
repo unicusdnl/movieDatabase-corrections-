@@ -1,0 +1,153 @@
+/*=============background=============*/
+.startup_container{
+    background: linear-gradient(to right, rgba(159,79,107,100), rgba(182,77,94,100));
+    width: 50rem;
+    height: 60rem;
+    position: absolute;
+    left: calc(62% - 17rem);
+    margin-top: -4rem;   
+}
+
+.logo img{    
+    width: 22%;
+    margin-left: 2.5rem;
+    margin-top: 5rem;
+}
+
+.logo h3{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    font-size: 2.9rem;
+    font-weight: 900;
+    margin-top: 0.8rem;
+    margin-left: 3rem;
+    line-height: 3.2rem;
+    color: var(--header-color);
+}
+
+/*=============button links=============*/
+
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;   
+    margin-top: 1.2rem;
+    margin-left: -2rem;
+    justify-content: center;
+}
+
+.links a{
+    background: var(--color-login);
+    color: var(--color-bg);
+    width: 20rem;
+    padding: 1rem;  
+    border-radius: 45rem;
+    border: 1px solid transparent;
+    width: 45vh;
+    height: 6.5vh;
+    margin-left: 5rem;    
+    padding: 0.8rem;
+  }
+
+.links a:hover{
+    background: transparent;
+    border-color: var(--color-secondary);
+    color: var(--color-bg);
+    box-shadow: 1px 2px var(--color-secondary);
+}
+
+.createAccount{
+    margin-top: 1.5rem;
+    background: var(--color-secondary);
+  
+}
+
+/*=============lines=============*/
+
+.join{
+    color: var(--color-bg);
+    font-weight: 200;
+    font-size: 13px;
+    margin-top: -5.1rem;
+    margin-left: 14rem;
+}
+
+.apple::after{
+    content: '';
+    width: 60px;
+    height: 0.5px;
+    background: var(--color-bg );
+    position: absolute;
+    margin-left: 3.8rem;
+    margin-top: 1.2rem;
+    display: block;
+}
+.apple::before{
+    content: '';
+    width: 60px;
+    height: 0.5px;
+    background: var(--color-bg );
+    position: absolute;
+    margin-left: 9.5rem;
+    margin-top: 2.9rem;
+    display: block;
+}
+
+.signin{
+    margin-top: 7rem;
+    background: transparent;
+    border-color: 1.5px solid var(--color-login);
+   
+}
+
+.left_image img{
+    display: absolute;
+    width: 160%;
+    height: 180%;
+    margin-left: -40rem;
+    margin-top: -20rem;
+    object-fit: fill;
+    position: absolute;
+    z-index: -1; 
+    
+  }
+
+.link2{
+    margin-top: -3.4rem;
+    margin-left: 3.5rem;
+    color: var(--color-secondary);
+    font-size: 13px;
+    line-height: 0.1rem;
+ }
+ 
+
+.link2 link{
+    margin-top: 5rem;
+    font-weight: 300;
+  }
+
+.privacy{
+    font-size: 13px;
+    margin-top: 3rem;
+    margin-left: 5.5rem;
+    color: var(--color-bg);
+    font-weight: 300; 
+    
+}
+
+.privacy p{
+    max-width: 200px;
+    margin: 0 auto;
+    padding: 50px;
+    border: 1px solid #8F8F8F;
+    text-align: left;
+    padding-top: 3.5rem;
+    position: relative;
+}
+
+
+.span1{
+    color: #F69090;
+}
+
+
