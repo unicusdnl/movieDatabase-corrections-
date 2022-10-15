@@ -1,0 +1,14 @@
+.nav{
+    margin-left: -25rem;
+    margin-top: -3rem;
+}
+
+.play{
+    display: flex;
+    color: var(--header-color);
+    margin-left: 0.5rem;
+    margin-top: 18rem;
+    width: 1500px;
+    height: 150px;
+}
+

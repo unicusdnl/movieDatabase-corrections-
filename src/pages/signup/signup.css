@@ -1,0 +1,316 @@
+/*=============background & header=============*/
+.signup_wrapper{
+    display: flex;
+    background: var(--color-bg-variant);   
+    transition: var(--transition);
+    padding: 1.2rem;
+    align-items: center;
+    border-radius: 0.5rem;
+    width: 50%;
+    margin-left: 16rem;
+    margin-top: 3rem;
+    height: 84vh;    
+    place-content: center;
+    align-items: center;
+}
+
+.logo_signup img{
+    width: 5.5rem;
+    margin-left: 1.8rem;
+    margin-top: -16.5rem;
+    align-items: center;
+}
+
+.title{
+    margin-top: -27rem;
+    margin-left: 19rem;
+    color: var(--header-color);
+    font-size: px;
+    font-weight: 700;    
+}
+
+/*=============form=============*/
+.signup_label{
+    margin-left: 38rem;
+    margin-top: 3rem;
+}
+
+label{
+    margin-top: -10rem;
+}
+
+.firstname_input{
+    margin-top: -2rem;
+    margin-left: 37.5rem;
+    width: 16%;
+    padding: 1.1rem;
+    line-height: 0.51rem; 
+    opacity: 0.7;
+}
+
+.last_input{
+    margin-top: -2rem;
+    margin-left: 37.5rem;
+    width: 19.5%;
+    padding: 1.1rem;
+    line-height: 0.51rem;
+    opacity: 0.7;
+}
+
+.email_input{
+    margin-top: -2rem;
+    margin-left: 37.5rem;
+    width: 33.8%;
+    padding: 1.1rem;
+    line-height: 0.51rem; 
+    opacity: 0.7;
+}
+
+.mobile_input{
+    margin-top: -2rem;
+    margin-left: 37.5rem;
+    width: 16%;
+    padding: 1.1rem;
+    line-height: 0.51rem; 
+    opacity: 0.7;
+}
+
+.username_input{
+    margin-top: -2rem;
+    margin-left: 37.5rem;
+    width: 19.5%;
+    padding: 1.1rem;
+    line-height: 0.51rem; 
+    opacity: 0.7;
+}
+
+.password_input{
+    margin-top: -2rem;
+    margin-left: 37.5rem;
+    width: 16%;
+    padding: 1.1rem;
+    line-height: 0.51rem; 
+    opacity: 0.7;
+}
+
+.retry_input{
+    margin-top: -2rem;
+    margin-left: 37.5rem;
+    width: 19.5%;
+    padding: 1.1rem;
+    line-height: 0.51rem; 
+    opacity: 0.7;
+}
+
+.s_input{
+    margin-top: -1rem;
+    margin-left: 51rem;
+    width: 19%;
+    padding: 1.1rem;
+    opacity: 0.7;
+    line-height: 0.51rem;
+}
+
+.f_name{
+    margin-top: 2.5rem;
+    margin-left: -18.9rem;
+}
+
+.l_name{
+    margin-top: -2rem;
+    margin-left: -2.9rem;
+}
+
+.email{
+    margin-top: 1.5rem;
+    margin-left: -18.9rem;
+}
+
+.mobile_number{
+    margin-top: 1.5rem;
+    margin-left: -18.9rem;
+}
+
+.username{
+    margin-top: -2rem;
+    margin-left: -2.9rem;
+}
+
+.password{
+    margin-top: 1.5rem;
+    margin-left: -18.9rem;
+}
+
+.retry_password{
+    margin-top: -2rem;
+    margin-left: -2.9rem;
+}
+
+.submit_button{
+    margin-top: 3rem;
+    margin-left: 18.5rem;
+    width: 30.8rem;
+    color: var(--header-color);
+    background: #c06767;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: default;
+}
+
+.submit_button:hover{
+    background: var(--color-hover);
+}
+
+.signin_btn{
+    background: transparent;
+    border: 1px solid;
+    color: var(--color-secondary);
+    box-shadow: none;
+    border-radius: 0.5rem;
+    margin-left: 40.8rem;
+    margin-top: -2.5rem;
+    width: 20vh;
+    height: 5vh;
+    cursor: default;
+}
+
+.signin_btn:hover{
+    background: var(--color-hover);
+    border: transparent;
+    color: var(--color-dark);
+    font-weight: 600;
+}
+
+.privacy_text{
+    font-size: 12px;
+    color: var(--header-color);
+    margin-left: 10.5rem;
+    margin-top: 7rem;
+}
+
+.help_text{
+    font-size: 12px;
+    color: var(--header-color);
+    margin-left: -5.5rem;
+    margin-top: 27rem;
+}
+
+.language{
+    font-size: 12px;
+    color: var(--header-color);
+    margin-left: -2.5rem;
+    margin-top: 27rem; 
+}
+
+.arrow{
+    width: 9%;
+    margin-top: 27rem;
+    margin-left: -0.8rem;
+}
+
+@media screen and (max-width:600px) {
+    .signup_wrapper{
+        background: transparent;
+    }
+
+    .logo_signup img{
+        margin-left: -12rem;
+        margin-top: -18rem;
+        width: 5rem;
+    }
+
+    .title{
+        margin-left: 8rem;
+        margin-top: -29rem;
+        font-size: 20px;
+    }
+
+    .email{
+        margin-left: -7rem;
+        margin-top: -27rem;
+    }
+
+    .email_input{
+        margin-left: 10rem;
+        margin-top: 0.1rem;
+        width: 60%;
+    }
+
+    .password{
+        margin-left: -7rem;
+        margin-top: 0.5rem;
+    }
+
+    .password_input{
+        margin-left: 10rem;
+        margin-top: 0.1rem;
+        width: 60%;
+    }
+
+    .retry_password{
+        margin-top: 0.5rem;
+        margin-left: -7rem;
+    }
+
+    .retry_input{
+        margin-left: 10rem;
+        margin-top: 0.1rem;
+        width: 60%;
+    }
+
+    .submit_button{
+        margin-left: 3rem;
+        width: 80%;
+        margin-top: 6rem;
+    }
+
+    .signin_btn{
+        display: inline-block;
+        width: 80%;
+        margin-top: 25rem;
+        margin-left: 3rem;
+        padding: 1.6rem;
+        align-items: center;
+        line-height: 1px;
+        place-content: center;
+        border-color: var(--header-color);
+       
+    }
+
+    .username{
+        display: none;
+    }
+
+    .username_input{
+        display: none;
+    }
+
+    .firstname_input{
+        display: none;
+    }
+
+    .f_name{
+        display: none;
+    }
+
+    .l_name{
+        display: none;
+    }
+
+    .last_input{
+        display: none;
+    }
+
+    .mobile_input{
+        display: none;
+    }
+
+    .mobile_number{
+        display: none;
+    }
+
+
+
+}

@@ -1,153 +1,379 @@
 /*=============background=============*/
-.startup_container{
-    background: linear-gradient(to right, rgba(159,79,107,100), rgba(182,77,94,100));
-    width: 50rem;
-    height: 60rem;
-    position: absolute;
-    left: calc(62% - 17rem);
-    margin-top: -4rem;   
+.container.links_container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15%;
+    margin-left: 11rem;
+    margin-top: 0.5rem;
+    position: fixed;
 }
 
 .logo img{    
-    width: 22%;
-    margin-left: 2.5rem;
-    margin-top: 5rem;
+    width: 5.5%;
+    margin-left: 51rem;
+    margin-top: 2rem; 
+    display: flex;  
 }
+
+.left_image img{
+    display: flex;
+    width: 50rem;
+    height: 45rem;
+    margin-left: -0.9rem;
+    margin-top: -17rem;
+    position: absolute;
+    z-index: -1; 
+    position: fixed;    
+  }
 
 .logo h3{
     display: grid;
-    grid-template-columns: 80% 20%;
-    font-size: 2.9rem;
+    grid-template-columns: 75% 35%;
+    font-size: 46px;
     font-weight: 900;
-    margin-top: 0.8rem;
-    margin-left: 3rem;
+    margin-top: 1rem;
+    margin-left: 51rem;
     line-height: 3.2rem;
     color: var(--header-color);
 }
 
-/*=============button links=============*/
-
-.links{
-    display: flex;
-    flex-direction: column;
-    gap: 0.6rem;   
-    margin-top: 1.2rem;
-    margin-left: -2rem;
-    justify-content: center;
+.google_logo{
+    width: 2.1%;
+    margin-top: -1.7rem;
+    margin-left: -6.5rem;
 }
 
-.links a{
-    background: var(--color-login);
-    color: var(--color-bg);
-    width: 20rem;
-    padding: 1rem;  
-    border-radius: 45rem;
-    border: 1px solid transparent;
-    width: 45vh;
-    height: 6.5vh;
-    margin-left: 5rem;    
-    padding: 0.8rem;
-  }
+/*=============button links=============*/
+.links_options{
+    display: flex;
+    flex-direction: column;
+    gap: -7rem;
+    margin-left: 48rem;
+}
 
-.links a:hover{
+.sign_text{
+    display: inline-block;
+    background: var(--header-color);
+    transition: var(--transition);
+    color: var(--color-dark);
+    border-radius: 45rem;
+    width: 32vh;
+    height: 5.6vh;
+    text-align: center;
+    align-items: center;
+    margin-left: -8rem;
+    margin-top: 0.6rem; 
+    line-height: 37px;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.sign_text:hover{
+    color: var(--header-color);
     background: transparent;
-    border-color: var(--color-secondary);
-    color: var(--color-bg);
-    box-shadow: 1px 2px var(--color-secondary);
+    border: 1px solid;
+}
+
+.sign_apple{
+    display: inline-block;
+    background: var(--header-color);
+    transition: var(--transition);
+    color: var(--color-dark);
+    border-radius: 45rem;
+    width: 32vh;
+    height: 5.6vh;
+    text-align: center;
+    align-items: center;
+    margin-left: -8rem;
+    margin-top: 1rem; 
+    line-height: 37px;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.sign_apple:hover{
+    color: var(--header-color);
+    background: transparent;
+    border: 1px solid;
 }
 
 .createAccount{
-    margin-top: 1.5rem;
-    background: var(--color-secondary);
-  
+    display: inline-block;
+    background: var(--color-dark);
+    transition: var(--transition);
+    border-radius: 45rem;
+    width: 32vh;
+    height: 5.6vh;
+    text-align: center;
+    align-items: center;
+    margin-left: -8rem;
+    margin-top: 0.2rem; 
+    line-height: 37px;
+    font-weight: 600;
+    font-size: 13px;
 }
+
+.createAccount:hover{
+    color: var(--color-secondary);
+}
+
 
 /*=============lines=============*/
-
 .join{
+    display: flex;
     color: var(--color-bg);
     font-weight: 200;
-    font-size: 13px;
-    margin-top: -5.1rem;
-    margin-left: 14rem;
+    font-size: 11px;
+    margin-top: 0.5rem;
+    margin-left: -1.9rem;
 }
 
-.apple::after{
+.links_options::after{
     content: '';
-    width: 60px;
-    height: 0.5px;
-    background: var(--color-bg );
+    width: 30px;
+    height: 1px;
+    background: var(--header-color);
     position: absolute;
-    margin-left: 3.8rem;
-    margin-top: 1.2rem;
+    margin-left: -4rem;
+    margin-top: 6.4rem;
     display: block;
 }
-.apple::before{
+.links_options::before{
     content: '';
-    width: 60px;
-    height: 0.5px;
-    background: var(--color-bg );
+    width: 30px;
+    height: 1px;
+    background: var(--header-color );
     position: absolute;
-    margin-left: 9.5rem;
-    margin-top: 2.9rem;
-    display: block;
+    margin-left: -1rem;
+    margin-top: 6.4rem;
+    display: flex;
 }
 
-.signin{
-    margin-top: 7rem;
-    background: transparent;
-    border-color: 1.5px solid var(--color-login);
-   
-}
-
-.left_image img{
-    display: absolute;
-    width: 160%;
-    height: 180%;
-    margin-left: -40rem;
-    margin-top: -20rem;
-    object-fit: fill;
-    position: absolute;
-    z-index: -1; 
-    
-  }
-
+/*=============End of Lines=============*/
 .link2{
-    margin-top: -3.4rem;
-    margin-left: 3.5rem;
+    display: flex;
+    margin-top: -5em;
+    margin-left: -7.5rem;
     color: var(--color-secondary);
     font-size: 13px;
-    line-height: 0.1rem;
  }
  
-
-.link2 link{
-    margin-top: 5rem;
-    font-weight: 300;
-  }
-
 .privacy{
+    display: inline-block;
     font-size: 13px;
-    margin-top: 3rem;
-    margin-left: 5.5rem;
-    color: var(--color-bg);
-    font-weight: 300; 
-    
+    margin-top: 0.8rem;
+    margin-left: -7.5rem;
+    color: var(--header-color);
+    font-weight: 300;     
+    line-height: 1.2rem;  
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
-
-.privacy p{
-    max-width: 200px;
-    margin: 0 auto;
-    padding: 50px;
-    border: 1px solid #8F8F8F;
-    text-align: left;
-    padding-top: 3.5rem;
-    position: relative;
-}
-
 
 .span1{
     color: #F69090;
 }
 
+/*=============sign in button=============*/
+.text:hover{
+    color: var(--color-dark);
+    background: var(--header-color);
+    border: transparent;
+    color: var(--color-dark);
+    font-weight: 600;
+}
 
+.text {
+    display: inline-block;
+    background: transparent;
+    transition: var(--transition);
+    border: 1px solid;
+    border-radius: 45rem;
+    border-color: var(--header-color);
+    width: 32vh;
+    height: 5.6vh;
+    text-align: center;
+    place-items: center;
+    margin-left: -8rem;
+    margin-top: 5rem; 
+    line-height: 35px;
+    place-content: center;  
+    box-shadow: 2px 1.2px var(--color-dark); 
+    font-size: 13px;
+}
+
+@media screen and (max-width:1024px) {
+    .startup_container{
+        width: var(--container-width-md);
+        height: 25rem;
+        width: 32rem;
+        margin-left: -8rem;
+        place-content: center;
+        position: absolute;
+    }
+
+    .logo img{
+        margin-top: -5rem;
+        width: 14%;
+        margin-left: 30rem;
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+
+    .left_image img{
+        width: 85rem;
+        margin-left: 4.5rem;
+        margin-top: -14rem;
+    }
+
+    .logo h3{
+        font-size: 37px;
+        grid-template-columns: 1fr;
+        width: var(--container-width-sm);
+        margin-left: 19rem;
+        margin-top: 0.5rem;
+        font-size: 30px;
+    }
+
+    .links_options{
+        margin-left: 23rem;
+        margin-top: 1rem;
+        width: 40%;
+    }
+
+    .privacy{
+        display: flex;
+        font-size: 12px;
+        justify-items: center;
+        line-height: 1rem;
+    }
+
+    .link2{        
+        grid-template-columns: 1fr;
+        margin-left: -6.4rem;
+        margin-top: -4rem;
+    }
+
+    .sign_text{
+        margin-top: -0.5rem;
+    }
+
+    .sign_apple{
+        margin-top: 1.3rem;
+    }
+
+    .google_logo{
+        width: 10%;
+    }
+
+    .join{
+        margin-top: 1rem;
+    }
+
+    .links_options::after{
+        margin-top: 5.5rem;
+    }
+
+    .links_options::before{
+        margin-top: 5.5rem;
+    }
+}
+
+ /*==================== MEDIA QUERY (SMALL DEVICES)================*/
+ @media screen and (max-width:600px){
+    .startup_container{
+        width: var(--container-width-lg);
+        height: 25rem;
+        width: 32rem;
+        margin-left: -8rem;
+        place-content: center;
+    }
+
+    .logo img{
+        margin-top: 7.5rem;
+        width: 12%;
+        margin-left: 20.5rem;
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+
+    .logo h3{
+        font-size: 23px;
+        grid-template-columns: 1fr;
+        width: var(--container-width-sm);
+        margin-left: 13rem;
+        margin-top: -0.7rem;
+        font-size: 21px;
+    }
+
+    .left_image img{
+        width: 55rem;
+        margin-left: -2rem;
+        margin-top: -52rem;
+    }
+
+    .links_options{
+        margin-left: 12.5rem;
+        margin-top: -1rem;
+        width: 40%;
+    }
+
+
+    .createAccount{
+        margin-top: 0.3rem;
+    }
+
+    .links_option_createAccount{
+        margin-top: 0.1rem;
+    }
+
+    .privacy{
+        font-size: 0px;
+        justify-items: center;
+        line-height: 1rem;
+    }
+
+    .container links_container{
+        margin-left: -1.8rem;
+    }
+
+    .sign_text{
+        margin-left: -8rem;
+        margin-top: 0.5rem;
+    }
+
+    .sign_apple{
+        margin-top: 1rem;
+    }
+
+    .join{
+        font-weight: 600px;
+        margin-top: 0.6rem;
+    }
+
+    .google_logo{
+        width: 7.5%;
+    }
+
+    .text{       
+        margin-top: 2rem;
+    }
+
+    .link2{        
+        grid-template-columns: 1fr;
+        margin-left: -6.8rem;
+        margin-top: -4rem;
+    }
+
+    .links_options::after{
+       margin-top: 6rem;
+    }
+
+    .links_options::before{
+        margin-top: 6rem;
+    }
+
+
+ }

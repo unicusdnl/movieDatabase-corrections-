@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 *{
   margin: 0;
@@ -12,13 +12,12 @@
 
 :root{
   --color-bg: #FFFFFF;
-  --color-bg-variant: #9C4D6A;
+  --color-bg-variant: #7c334e;
   --color-secondary: #F69090;
-  --header-color: #F1F1F1;
-  --color-primary: #DE3636;
-  --color-primary-variant: #EE1B1B;
+  --header-color: #D9D9D9;
   --color-text: #212121;
-  --color-login: #8F8F8F;
+  --color-dark: #7B7272;
+  --color-hover: #9C4D6A;
 
   --transition: all 400ems ease ;
 
@@ -35,11 +34,20 @@ html{
   display: none;
 }
 
+.nav{
+  background: var(--color-bg-variant);
+  color: var(--header-color);
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0 1rem;
+  align-items: center;
+}
+
 body{
-  background: var(--color-bg);
+  background: linear-gradient(to right, rgba(159,79,107,100), rgba(182,77,94,100));
   line-height: 1.7rem;
   font-family: "Poppins", sans-serif;
-  color: var(--color-primary);
 }
 
 /*==================GENERAL STYLES/*==================*/
@@ -49,7 +57,7 @@ body{
 }
 
 h1,
-h2,
+
 h3,
 h4,
 h5{
@@ -68,7 +76,7 @@ section{
 section > h2,
 section > h5{
   text-align: left;
-  color: var(--color-primary)
+  color: var(--header-color)
 }
 
 section > h2 {
@@ -81,33 +89,41 @@ section > h2 {
 }
 
 a{
-  color: var(--color-secondary);
+  color: var(--header-color);
 }
 
 a:hover{
-  color: #F69090;
+  color: var(--header-color);
 }
 
 .btn{
-  width: max-content;
   display: inline-block;
-  color: var(--color-primary-variant);
-  padding: 0.7 1.2rem;
-  border-radius: 0.4rem;
-  cursor: pointer;
-  border: 1px solid var(--color-login);
+  background: #c06767;
   transition: var(--transition);
+  border-radius: 0.6rem;
+  width: 60vh;
+  height: 8vh;
+  margin-left: 1.8rem;
+  margin-top: 1rem; 
+  align-items: center;
+  color: var(--color-dark);
 }
 
 .btn-primary{
-  background: var(--color-login);
+  background: var(--header-color);
   color: var(--color-bg);
+}
+
+.btn-primary2{
+  color: var(--color-secondary);
 }
 
 img{
   display: flex;
-  width: 60px;  
+  width: 400px;  
 }
+
+
 
 /*============ MEDIA QUERY (MEDIUM DEVICES)============*/
 @media screen and (max-width:1024px){
