@@ -1,0 +1,74 @@
+.reset_container{
+    display: flex;
+    background: transparent;
+    transition: var(--transition);
+    padding: 1.2rem;
+    align-items: center;
+    border-radius: 0.5rem;
+    width: 30%;
+    margin-left: 35rem;
+    margin-top: 16rem;
+    height: 40vh;
+    place-items: center;
+    align-items: center;
+}
+
+.logo_reset{
+    display: flex;
+    width: 5rem;
+    margin-left: -32rem;
+    margin-top: -43rem;
+}
+
+.email_address{
+    margin-top: -25rem;
+    margin-left: 48rem;
+}
+
+.address_label{
+    color: var(--header-color);
+    margin-left: -68rem;
+    font-weight: 400;
+    font-size: 10px;
+    margin-top: -38rem;
+}
+
+.address_input{
+    width: 20rem;
+    margin-left: -9rem;
+    margin-top: 10rem;
+    height: 7vh;
+    border-radius: 0.5rem;
+    border: 1.5px solid;
+    background-color: transparent;
+    color: var(--header-color);
+}
+
+.reset_btn{
+    display: inline-block;
+    background: #c06767;
+    transition: var(--transition);
+    border-radius: 0.6rem;
+    width: 20.5rem;
+    height: 8vh;
+    margin-left: -73rem;
+    margin-top: -4rem;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.reset_header{
+    color: var(--header-color);
+    font-weight: 600;
+    margin-left: 43rem;
+    margin-top: -20rem;
+    font-size: 18px;
+}
+
+.box{
+    color: var(--header-color);
+    margin-top: -34rem;
+    margin-left: 23rem;
+}

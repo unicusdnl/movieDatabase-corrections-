@@ -1,14 +1,26 @@
-.nav{
-    margin-left: -25rem;
-    margin-top: -3rem;
-}
-
 .play{
     display: flex;
     color: var(--header-color);
-    margin-left: 0.5rem;
+    margin-left: 45rem;
     margin-top: 18rem;
-    width: 1500px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 }
+
+.coverImage img{
+    display: flex;
+    margin-top: 4.2rem;
+    width: 100%;
+    height: 100vh;
+}
+
+.menu{
+   
+    margin-top: -20rem;
+}
+
+
+
+
+
 

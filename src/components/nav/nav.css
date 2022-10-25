@@ -1,0 +1,73 @@
+header {
+    height: 10vh;
+    line-height: 10vh;
+    background-image: linear-gradient(to right bottom, rgba(159, 79, 107, 100), rgba(182, 77, 94, 100), rgba(182, 77, 94, 100),
+            rgba(182, 77, 50, 90), rgba(182, 77, 50, 70), rgba(182, 77, 50, 30));
+    color: var(--header-color);
+    margin-top: -24.7rem;
+    position: relative;
+    z-index: 999;
+}
+
+.navbar {
+    display: flex;
+    font-size: 15px;
+    margin-left: 18rem;
+    margin-top: -2.7rem;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.nav_bar {
+    display: flex;
+    gap: 1rem;
+    margin-top: -1rem;
+    align-items: center;
+    font-size: 13px;
+}
+
+.navigation {
+    display: flex;
+    margin-left: -3rem;
+    margin-top: -0.2rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav_logo {
+    display: flex;
+    width: 4rem;
+    margin-left: 7rem;
+    margin-top: 0.5rem;
+}
+
+header a {
+    color: var(--header-color);
+}
+
+.account_icons {
+    display: flex;
+    gap: 1rem;
+    margin-left: 75rem;
+    margin-top: -2.5rem;
+    font-size: 14px;  
+}
+
+.subscribe {
+    display: inline-block;
+    background: var(--header-color);
+    color: var(--color-bg-variant);
+    font-weight: 500;
+    font-size: 14.5px;
+    margin-left: 81rem;
+    margin-top: -2.3rem;
+    height: 5vh;
+    width: 10rem;
+    border-radius: 0.5rem;
+}
+
+.toggle {
+    margin-top: 5rem;
+    margin-left: 10rem;
+    width: 5rem;
+}

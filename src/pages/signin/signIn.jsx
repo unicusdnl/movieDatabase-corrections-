@@ -5,6 +5,7 @@ import emailjs from 'emailjs-com';
 import logo from '../../images/logo.svg'
 import arrow from '../../images/arrow.png'
 import {AiOutlineEyeInvisible, AiOutlineEye} from 'react-icons/ai'
+import {GoSignIn} from 'react-icons/go'
 import {RiLockPasswordFill} from 'react-icons/ri'
 import {MdEmail} from 'react-icons/md'
 import { Link } from 'react-router-dom';
@@ -29,21 +30,18 @@ const Signin = () => {
 
 
   return (
-    <section id='signin'>
-      
-    
+    <section id='signin'>    
         <div className="sign_container">               
           <div className="logo_signin">
             <img src= {logo} alt="logo" />                  
           </div>  
-
           </div>
-              
-        <div className="signin_options">          
-            
+             
+        <h3 className="top_header">Sign In</h3>     
+                 
         <form ref={form} onSubmit={sendEmail} className="form_signin">
-        <div className="user_name">
-            <label className="signup_label">Username or Email</label>
+        <div className="user_name2">
+            <label className="label_username">Username/Email</label>
             <input className="user_input" 
                    type="text" 
                    name="name"
@@ -51,7 +49,7 @@ const Signin = () => {
           </div>
 
           <div className="signin_password">
-            <label className="signup_label">Password</label>
+            <label className="pass_label">Password</label>
             <input className="pass_input" 
                    type="text" 
                    name="name"
@@ -67,7 +65,7 @@ const Signin = () => {
             <RiLockPasswordFill className='password_image'/>
             <MdEmail className='email_image'/>
 
-            <button type='submit' className='submit'>
+            <button type='submit' className='signin_submit'>
               <Link to="/home">Sign In</Link>
             </button>
 
@@ -79,11 +77,13 @@ const Signin = () => {
             <Link to="/reset" className="forgotten_link">Forgotten Password?</Link>
             </div>
 
-             <h2 className="new_user">New User?
+              <div className="new_user">
+             <h2 className="new">New User?
              <span>
               <Link to="/signup" className='forgotten_sp_link'> Sign up now </Link>             
             </span>
-            </h2>      
+            </h2> 
+            </div>     
         </form>
 
             <h3 className='privacy_text'>
@@ -98,8 +98,8 @@ const Signin = () => {
               English(United Kingdom)
               </h3>    
               <img src= {arrow} alt="logo" className='arrow' />
-
-        </div>
+              <GoSignIn className='signin_image'/>
+      
     </section>
   )
 }

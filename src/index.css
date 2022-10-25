@@ -34,13 +34,10 @@ html{
   display: none;
 }
 
-.nav{
-  background: var(--color-bg-variant);
-  color: var(--header-color);
+
+.navigation{
   display: flex;
   justify-content: space-between;
-  gap: 1rem;
-  padding: 0 1rem;
   align-items: center;
 }
 
@@ -48,6 +45,7 @@ body{
   background: linear-gradient(to right, rgba(159,79,107,100), rgba(182,77,94,100));
   line-height: 1.7rem;
   font-family: "Poppins", sans-serif;
+  
 }
 
 /*==================GENERAL STYLES/*==================*/
@@ -62,6 +60,7 @@ h3,
 h4,
 h5{
   font-weight: 500;
+  text-decoration: none;
 }
 
 h1{
@@ -90,6 +89,7 @@ section > h2 {
 
 a{
   color: var(--header-color);
+  text-decoration: none;
 }
 
 a:hover{
@@ -98,7 +98,6 @@ a:hover{
 
 .btn{
   display: inline-block;
-  background: #c06767;
   transition: var(--transition);
   border-radius: 0.6rem;
   width: 60vh;
@@ -106,7 +105,7 @@ a:hover{
   margin-left: 1.8rem;
   margin-top: 1rem; 
   align-items: center;
-  color: var(--color-dark);
+  text-decoration: none;
 }
 
 .btn-primary{
@@ -118,10 +117,7 @@ a:hover{
   color: var(--color-secondary);
 }
 
-img{
-  display: flex;
-  width: 400px;  
-}
+
 
 
 
