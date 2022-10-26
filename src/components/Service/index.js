@@ -1,13 +1,13 @@
 import axios from 'axios'
 
 const apiKey= '41467446ef4c8f2ffa78fc5c6692fbd5';
-const url= 'https://api.themoviedb.org/3/movie/550?api_key=41467446ef4c8f2ffa78fc5c6692fbd5';
-const nowPlayingUrl= '${https://api.themoviedb.org/3/movie/550?api_key=41467446ef4c8f2ffa78fc5c6692fbd5}/movie/now_playing';
-const topratedUrl= '${https://api.themoviedb.org/3/movie/550?api_key=41467446ef4c8f2ffa78fc5c6692fbd5}/movie/top_rated';
-const movieUrl= '${https://api.themoviedb.org/3/movie/550?api_key=41467446ef4c8f2ffa78fc5c6692fbd5}/movie';
-const genreUrl= '${https://api.themoviedb.org/3/movie/550?api_key=41467446ef4c8f2ffa78fc5c6692fbd5}/genre/movie/list';
-const moviesUrl= '${https://api.themoviedb.org/3/movie/550?api_key=41467446ef4c8f2ffa78fc5c6692fbd5}/discover/movie';
-const personUrl= '${https://api.themoviedb.org/3/movie/550?api_key=41467446ef4c8f2ffa78fc5c6692fbd5}/trending/person/week';
+const url= 'https://api.themoviedb.org/3';
+const nowPlayingUrl= '$https://api.themoviedb.org/3/movie/now_playing';
+const topratedUrl= '$https://api.themoviedb.org/3/movie/top_rated';
+const movieUrl= '$https://api.themoviedb.org/3/movie';
+const genreUrl= '$https://api.themoviedb.org/3/genre/movie/list';
+const moviesUrl= '$https://api.themoviedb.org/3/discover/movie';
+const personUrl= '$https://api.themoviedb.org/3/trending/person/week';
 
 export const fetchMovies =async () => {
     try{
