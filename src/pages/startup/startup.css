@@ -1,382 +1,103 @@
-/*=============background=============*/
-.container.links_container{
-    width: 100%;
+* {
+    box-sizing: border-box;
+}
+
+#startup {
+    --button-width: 300px;
+
     display: flex;
-    align-items: center;
-    gap: 15%;
-    margin-left: 11rem;
-    margin-top: 0.5rem;
-    position: fixed;
-}
-
-.logo img{    
-    width: 5.5%;
-    margin-left: 51rem;
-    margin-top: 2rem; 
-    display: flex;  
-}
-
-.left_image img{
-    display: flex;
-    width: 50rem;
-    height: 45rem;
-    margin-left: -0.9rem;
-    margin-top: -17rem;
-    position: absolute;
-    z-index: -1; 
-    position: fixed;    
-  }
-
-.logo h3{
-    display: grid;
-    grid-template-columns: 75% 35%;
-    font-size: 46px;
-    font-weight: 900;
-    margin-top: 1rem;
-    margin-left: 51rem;
-    line-height: 3.2rem;
-    color: var(--header-color);
-}
-
-.google_logo{
-    width: 3%;
-    margin-top: -1.6rem;
-    margin-left: -6.9rem;
-}
-
-/*=============button links=============*/
-.links_options{
-    display: flex;
-    flex-direction: column;
-    gap: -7rem;
-    margin-left: 48rem;
-}
-
-.sign_text{
-    display: inline-block;
-    background: var(--header-color);
-    transition: var(--transition);
-    color: var(--color-dark);
-    border-radius: 45rem;
-    width: 32vh;
-    height: 5.6vh;
-    text-align: center;
-    align-items: center;
-    margin-left: -8.5rem;
-    margin-top: 0.5rem; 
-    line-height: 40px;
-    font-weight: 600;
-    font-size: 14px;
-    text-decoration: none;
-}
-
-.sign_text:hover{
-    color: var(--header-color);
-    background: transparent;
-    border: 1px solid;
-}
-
-.sign_apple{
-    display: inline-block;
-    background: var(--header-color);
-    transition: var(--transition);
-    color: var(--color-dark);
-    border-radius: 45rem;
-    width: 32vh;
-    height: 5.6vh;
-    text-align: center;
-    align-items: center;
-    margin-left: -8.5rem;
-    margin-top: 1rem; 
-    line-height: 37px;
-    font-weight: 600;
-    font-size: 14px;
-    text-decoration: none;
-}
-
-.sign_apple:hover{
-    color: var(--header-color);
-    background: transparent;
-    border: 1px solid;
-}
-
-.createAccount{
-    display: inline-block;
-    background: var(--color-dark);
-    transition: var(--transition);
-    color: var(--header-color);
-    border-radius: 45rem;
-    width: 32vh;
-    height: 5.6vh;
-    text-align: center;
-    align-items: center;
-    margin-left: -8.5rem;
-    margin-top: 0.2rem; 
-    line-height: 37px;
-    font-weight: 600;
-    font-size: 14px;
-    text-decoration: none;
-}
-
-.createAccount:hover{
-    color: var(--color-secondary);
-}
-
-
-/*=============lines=============*/
-.join{
-    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 0px;
+    height: 100vh;
     color: var(--color-bg);
+}
+
+.left-pane {
+    flex: 2;
+}
+
+.right-pane {
+    flex: 3;
+    padding: 6rem 4rem;
+}
+
+#bg-img {
+    width: 100%;
+    height: 100%;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.logo h3 {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.links-container {
+    margin-top: 4rem;
+}
+
+.custom-btn {
+    background-color: var(--header-color);
+    padding: 0.5rem 1rem;
+    border-radius: 100px;
+    max-width: var(--button-width);
+    transition: outline 200ms;
+}
+
+.custom-btn > .custom-btn-img {
+    width: 30px;
+    height: 30px;
+}
+
+.custom-btn > .custom-btn-text {
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--color-dark);
+}
+
+.custom-btn:hover {
+    outline: 4px solid var(--color-dark);
+}
+
+#apple-signin-btn,
+#mobile-signin-btn {
+    margin-top: 1rem;
+}
+
+#signin-divider {
     font-weight: 200;
-    font-size: 11px;
-    margin-top: 0.9rem;
-    margin-left: -2.4rem;
+    font-size: 1rem;
+    margin: 1rem calc(var(--button-width) / 2) 0px calc((var(--button-width) / 2) - 2ch);
 }
 
-.links_options::after{
-    content: '';
-    width: 30px;
-    height: 1px;
-    background: var(--header-color);
-    position: absolute;
-    margin-left: -4.5rem;
-    margin-top: 6.4rem;
-    display: block;
-}
-.links_options::before{
-    content: '';
-    width: 30px;
-    height: 1px;
-    background: var(--header-color );
-    position: absolute;
-    margin-left: -1.5rem;
-    margin-top: 6.4rem;
-    display: flex;
+.privacy {
+    margin-top: 1rem;
+    width: var(--button-width);
+    cursor: pointer;
+    font-size: 0.9rem;
 }
 
-/*=============End of Lines=============*/
-.link2{
-    display: flex;
-    margin-top: -5em;
-    margin-left: -8rem;
-    color: var(--color-secondary);
-    font-size: 13px;
- }
- 
-.privacy{
-    display: inline-block;
-    font-size: 13px;
-    margin-top: 0.8rem;
-    margin-left: -8rem;
-    color: var(--header-color);
-    font-weight: 300;     
-    line-height: 1.2rem;  
-}
-
-.span1{
+em {
     color: #F69090;
 }
 
-/*=============sign in button=============*/
-.text:hover{
-    color: var(--color-dark);
-    background: var(--header-color);
-    border: transparent;
-    color: var(--color-dark);
-    font-weight: 600;
+.signin-alt {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
 }
 
-.text {
-    display: inline-block;
-    background: transparent;
-    transition: var(--transition);
-    border: 1px solid;
-    border-radius: 45rem;
-    border-color: var(--header-color);
-    color: var(--header-color);
-    width: 32vh;
-    height: 5.6vh;
-    text-align: center;
-    place-items: center;
-    margin-left: -8.5rem;
-    margin-top: 4rem; 
-    line-height: 35px;
-    place-content: center;  
-    box-shadow: 2px 1.2px var(--color-dark); 
-    font-size: 14px;
-    text-decoration: none;
+
+
+
+
+
+
+img {
+    width: 50px;
+    height: 50px;
 }
-
-@media screen and (max-width:1024px) {
-    .startup_container{
-        width: var(--container-width-md);
-        height: 25rem;
-        width: 32rem;
-        margin-left: -8rem;
-        place-content: center;
-        position: absolute;
-    }
-
-    .logo img{
-        margin-top: -5rem;
-        width: 14%;
-        margin-left: 30rem;
-        grid-template-columns: 1fr;
-        align-items: center;
-    }
-
-    .left_image img{
-        width: 85rem;
-        margin-left: 4.5rem;
-        margin-top: -14rem;
-    }
-
-    .logo h3{
-        font-size: 37px;
-        grid-template-columns: 1fr;
-        width: var(--container-width-sm);
-        margin-left: 19rem;
-        margin-top: 0.5rem;
-        font-size: 30px;
-    }
-
-    .links_options{
-        margin-left: 23rem;
-        margin-top: 1rem;
-        width: 40%;
-    }
-
-    .privacy{
-        display: flex;
-        font-size: 12px;
-        justify-items: center;
-        line-height: 1rem;
-    }
-
-    .link2{        
-        grid-template-columns: 1fr;
-        margin-left: -6.4rem;
-        margin-top: -4rem;
-    }
-
-    .sign_text{
-        margin-top: -0.5rem;
-    }
-
-    .sign_apple{
-        margin-top: 1.3rem;
-    }
-
-    .google_logo{
-        width: 10%;
-    }
-
-    .join{
-        margin-top: 1rem;
-    }
-
-    .links_options::after{
-        margin-top: 5.5rem;
-    }
-
-    .links_options::before{
-        margin-top: 5.5rem;
-    }
-}
-
- /*==================== MEDIA QUERY (SMALL DEVICES)================*/
- @media screen and (max-width:600px){
-    .startup_container{
-        width: var(--container-width-lg);
-        height: 25rem;
-        width: 32rem;
-        margin-left: -8rem;
-        place-content: center;
-    }
-
-    .logo img{
-        margin-top: 7.5rem;
-        width: 12%;
-        margin-left: 20.5rem;
-        grid-template-columns: 1fr;
-        align-items: center;
-    }
-
-    .logo h3{
-        font-size: 23px;
-        grid-template-columns: 1fr;
-        width: var(--container-width-sm);
-        margin-left: 13rem;
-        margin-top: -0.7rem;
-        font-size: 21px;
-    }
-
-    .left_image img{
-        width: 55rem;
-        margin-left: -2rem;
-        margin-top: -52rem;
-    }
-
-    .links_options{
-        margin-left: 12.5rem;
-        margin-top: -1rem;
-        width: 40%;
-    }
-
-
-    .createAccount{
-        margin-top: 0.3rem;
-    }
-
-    .links_option_createAccount{
-        margin-top: 0.1rem;
-    }
-
-    .privacy{
-        font-size: 0px;
-        justify-items: center;
-        line-height: 1rem;
-    }
-
-    .container links_container{
-        margin-left: -1.8rem;
-    }
-
-    .sign_text{
-        margin-left: -8rem;
-        margin-top: 0.5rem;
-    }
-
-    .sign_apple{
-        margin-top: 1rem;
-    }
-
-    .join{
-        font-weight: 600px;
-        margin-top: 0.6rem;
-    }
-
-    .google_logo{
-        width: 7.5%;
-    }
-
-    .text{       
-        margin-top: 2rem;
-    }
-
-    .link2{        
-        grid-template-columns: 1fr;
-        margin-left: -6.8rem;
-        margin-top: -4rem;
-    }
-
-    .links_options::after{
-       margin-top: 6rem;
-    }
-
-    .links_options::before{
-        margin-top: 6rem;
-    }
-
-
- }
