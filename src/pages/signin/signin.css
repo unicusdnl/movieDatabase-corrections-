@@ -1,406 +1,234 @@
-/*=============background=============*/
-.sign_container {
-    display: flex;
-    background: transparent;
-    transition: var(--transition);
-    padding: 1.2rem;
-    border: 0.6px solid transparent;
-    align-items: center;
-    border-radius: 0.5rem;
-    width: 30%;
-    margin-left: 33rem;
-    margin-top: 7.5rem;
-    height: 60vh;
-    place-items: center;
+@import url('https://fonts.googleapis.com/css2?famil=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
 }
 
-.signin_image{
-    display: flex;
-    background: var(--header-color);
-    color: var(--color-bg-variant);
-    font-size: 22px;
-    width: 40px;
-    height: 40px;
-    padding: 10px;
-    text-align: center;
-    border-radius: 50%;
-    border: 2px solid #fff;
-    margin: 0 10px;
-    margin-left: 45rem;
-    margin-top: -27.5rem;
-}
+#signin {
+    --button-width: 280px;
+    --button-img: 100px;
+    --textbox-width: 100rem;
 
-.logo_signin img {
     display: flex;
-    width: 5rem;
-    margin-left: -29.8rem;
-    margin-top: -19.8rem;
-    align-items: center;
-}
-
-.top_header{
-    display: flex;
+    flex-flow: row wrap;
+    margin-top: 0px;
+    margin-left: 50rem;
+    height: 100vh;
     color: var(--header-color);
+}
+
+.logo-signin img{
+    margin-left: -45rem;
+    height: 70px;
+    width: 70px;
+}
+
+.logo-signin h3{  
+    font-size: 23px;
     font-weight: 600;
-    font-size: 20px;
-    margin-left: 44rem;
-    margin-top: -26rem;
+}
+
+#top_header{
+    margin-left: -2.8rem;
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+    color: var(--color-bg-variant);
 }
 
 .form_signin{
-    margin-left: -25.5rem;
-    margin-top: 12rem;
+    margin-top: 11rem;
 }
 
-/*=============button=============*/
-.signin_submit {
-    display: inline-block;
-    background: #c06767;
-    transition: var(--transition);
-    color: var(--header-color);
+.left-pane-signin{
+    justify-content: start;
+}
+
+.right-pane-signin{
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+}
+
+.right-pane-signin > .sign-up-link{   
+    margin-left: 30rem;
     text-decoration: none;
-    border-radius: 0.6rem;
-    width: 16%;
-    height: 8vh;
-    margin-left: 62rem;
-    margin-top: 13rem;
-    align-items: center;
-    font-weight: 600;
-    font-size: 16px;
+    color: var(--header-color);
+}
+
+em:hover{
+    color: var(--color-bg-variant);
     text-decoration: none;
 }
 
-.signin_submit:hover {
-    background: var(--color-secondary);
-    color: var(--header-color);
+.form_signin:before{
+    content:" ";
+    display: block;
+    height: 320px;
+    width: 22rem;
+    position: absolute;
+    top: 18%;
+    left: 39.5%;
+    background: var(--header-color);
+    z-index: -1;
+    border-radius: 0 0 3rem 3rem;
+    opacity: 1;
 }
 
-/*=============form=============*/
-.form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-content: center;
+.form_signin:after{
+    content:" ";
+    display: block;
+    height: 108px;
+    width: 22rem;
+    position: absolute;
+    top: 2.9%;
+    left: 39.5%;
+    background: var(--header-color);
+    z-index: -1;
+    border-radius: 3rem 3rem 0 0;
+    opacity: 0.8;
 }
 
-.sign_container form {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+#middle-img{
+    margin-left: -3.3rem;
+    margin-top: 2rem;
+    font-size: 24px;
+    color: var(--color-bg-variant);
 }
 
-.user_name2 {
-    color: var(--header-color);
-    align-items: center;
+.middle-pane-btn{
+    background: var(--header-color);
+    border-radius: 100px;
+    max-width: var(--button-img);
+    height: 6vh;
+    width: 5.5%;
 }
 
-.user_input {
-    display: flex;
+#middle-img > .middle-pane-signin{
+    margin-left: 0.5rem;
+    margin-top: 0.6rem;
+}
+
+.user-label > .signin-label{
     margin-top: -10rem;
-    margin-left: 62.4rem;
-    width: 15.5%;
-    height: 7vh;
-    padding: 1.1rem;
-    line-height: 0.51rem;
-    border: 1.5px solid;
-    background: transparent;
-    color: var(--header-color);
-    border-radius: 0.5rem;
-}
-
-.signin_password {
-    margin-left: -35.5rem;
-}
-
-.pass_input {
-    margin-top: -3rem;
-    margin-left: 97.8rem;
-    width: 12.2%;
-    height: 7vh;
-    padding: 1.1rem;
-    line-height: 0.51rem;
-    border: 1.5px solid;
-    background: transparent;
-    color: var(--header-color);
-    border-radius: 0.5rem;
-}
-
-.eye {
-    padding: 0.5rem;
-    outline: none;
-    margin-top: -2.5rem;
-    margin-left: 79rem;
-    background: transparent;
-    font-size: 1.2rem;
-    cursor: pointer;
-    color: var(--header-color);
-}
-
-.password_image {
-    padding: 0.5rem;
-    outline: none;
-    margin-top: -1.6rem;
-    margin-left: 62.4rem;
-    background: transparent;
-    font-size: 2rem;
-    color: var(--header-color);
-}
-
-.email_image {
-    display: flex;
-    margin-top: -4.7rem;
-    margin-left: 63rem;
-    color: var(--header-color);
-}
-
-.label_username{
-    display: inline-block;
-    margin-left: 64.1rem;
-    color: var(--header-color);
-    font-size: 14px;
-    margin-top: -9.5rem;
-}
-
-.pass_label{
-    display: flex;
-    margin-left: 99.5rem;
-    color: var(--header-color);
-    font-size: 15px;
-    margin-top: -6rem;
-}
-
-/*=============links=============*/
-.remember_me {
-    font-size: 13px;
-    color: var(--header-color);
-    margin-left: 69rem;
-    margin-top: -12rem;
-}
-
-.forgotten_link {
-    display: flex;
-    color: var(--color-secondary);
-    font-weight: 500;
-    margin-left: 67.5rem;
-    font-size: 13px;
-    margin-top: 0.5rem;
-    text-decoration: none;
-}
-
-.links_text{
-    margin-top: 1rem;
-}
-
-.forgotten_sp_link {
-    color: var(--color-secondary);
-    font-weight: 600;
-    margin-top: -15rem;
-    text-decoration: none;
-    border: none;
-}
-
-.forgotten_sp_link:hover{
-    color: var(--header-color);
-}
-
-.new_user {
-    display: inline-block;
-    color: var(--header-color);
-    margin-left: 102rem;
-    margin-top: -23rem;
-}
-
-.new{
-    font-weight: 300;
+    margin-bottom: -4rem;
+    margin-left: -10rem;
     font-size: 17px;
+    color: var(--color-dark);
+}
+
+.user-label > .email_image{
+    margin-top: -10.6rem;
+    margin-left: -17rem;
+    color: var(--color-dark);
+}
+
+.user-label > .password_image{
+    margin-top: -10.6rem;
+    margin-left: -17rem;
+    color: var(--color-dark);
+}
+
+.user-input{
+    margin-left: -4.5rem;
+    margin-top: -12.5rem;
+    height: 10%;
+    border-radius: 5px;
+    width: 17.5rem;
+    height: 2.5rem;
+    text-indent: 12%;
+    background: var(--header-color);
+    z-index: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#user-textbox > .user-input {
+    margin-left: -12.5rem;
+}
+
+.eye{
+    margin-top: -12rem;
+    margin-left: 5.9rem;
+    color: var(--color-dark);
+    background: transparent;
+}
+
+#remember{
+    font-size: 0.85rem;
+    margin-top: -9.5rem;
+    margin-left: -9rem;
+    color: var(--color-dark);
+}
+
+#bottom-links-checkbox{
+    margin-top: -1.5rem; 
+    margin-left: -10rem;
+}
+
+.bottom-links{
+    margin-top: -1.6rem;
+    margin-left: -1rem;
+}
+
+.bottom-links > .forgotten{
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: var(--color-dark);
+}
+
+.signin-btn > .signin-btn-text{
+    text-decoration: none;
+    margin-left: -3.5rem;
+    font-size: 1rem;
+    color: var(--header-color);
+    font-weight: 500;
+}
+
+.signin_btn{
+    background-color: var(--color-bg-variant);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    width: var(--button-width);
+    transition: outline 200ms;
+    margin-top: 0.5rem;
+    margin-left: -10rem;
+}
+
+#signin-submit-btn > .signin-btn-text{
+    margin-left: 6.5rem;
+    font-weight: 700;
+    color: var(--header-color); 
+    text-decoration: none;  
+}
+
+#signin-submit-btn{
     margin-top: 4rem;
 }
 
-.checkbox {
-    display: flex;
-    margin-left: 68rem;
-    margin-top: -1.3rem;
-    font-size: 10px;
+#signin-submit-btn:hover{
+    outline: 1px solid var(--header-color);
 }
 
-.privacy_text {
-    font-size: 12px;
+#copyright{
+    font-size: 14px;
+    margin-top: 32rem;
+    margin-left: -14.3rem;
+}
+
+.line{
     color: var(--header-color);
-    margin-left: 52.5rem;
-    margin-top: 9.3rem;
+}
+
+.line:before{
+    content:" ";
+    display: block;
+    height: 1px;
+    width: 96rem;
+    position: absolute;
+    top: 90%;
+    left: 0;
+    background: var(--header-color);
+}
+
+em{
     text-decoration: none;
 }
 
-.help_text {
-    font-size: 12px;
-    color: var(--header-color);
-    margin-left: 49rem;
-    margin-top: -1.5rem;
-    text-decoration: none;
-
-}
-
-.language {
-    font-size: 12px;
-    color: var(--header-color);
-    margin-left: 36.6rem;
-    margin-top: -1.5rem;
-}
-
-.arrow {
-    width: 2%;
-    margin-top: -1.9rem;
-    margin-left: 44.5rem;
-}
-
-@media screen and (max-width:1024px) {
-    .sign_container {
-        align-items: center;
-    }
-
-    .signin_options {
-        margin-left: 9rem;
-        width: 65%;
-
-    }
-
-    .logo_signin {
-        margin-top: -8rem;
-        margin-left: -3rem;
-    }
-
-    .privacy_text {
-        margin-left: 5rem;
-    }
-
-}
-
-@media screen and (max-width:600px) {
-    .signin_options {
-        background: transparent;
-        margin-left: 11rem;
-    }
-
-    .signin_label {
-        margin-left: 10rem;
-        margin-top: -10rem;
-    }
-
-    .user_name {
-        margin-top: -0.5rem;
-        margin-left: -16rem;
-        font-size: 11.5px;
-        font-weight: 500;
-    }
-
-    .user_input {
-        display: flex;
-        margin-top: -3rem;
-        margin-left: 9.5rem;
-        width: 17rem;
-        border-radius: 45rem;
-        padding: 1.1rem;
-    }
-
-    .signin_password {
-        margin-left: -16rem;
-        font-size: 11px;
-        font-weight: 500;
-    }
-
-    .pass_input {
-        margin-top: 0.3rem;
-        margin-left: 9.5rem;
-        width: 17rem;
-        border-radius: 45rem;
-        padding: 1.1rem;
-    }
-
-    .logo_signin img {
-        width: 5rem;
-        margin-left: 5rem;
-        margin-top: 0.1rem;
-        display: flex;
-        place-content: center;
-        align-items: center;
-    }
-
-    .signin_submit {
-        display: inline-block;
-        margin-top: 24rem;
-        margin-left: -5rem;
-        width: 9rem;
-        border-radius: 45rem;
-        font-weight: 600;
-        place-content: center;
-    }
-
-    .password_image {
-        margin-left: -16.8rem;
-        margin-top: -2.3rem;
-    }
-
-    .email_image {
-        margin-left: -30rem;
-        margin-top: -7.2rem;
-    }
-
-    .eye {
-        margin-left: -16rem;
-    }
-
-    .user_email {
-        margin-top: -15rem;
-    }
-
-    .checkbox {
-        margin-left: -4rem;
-        margin-top: -1.3rem;
-        width: 50%;
-    }
-
-    .remember_me {
-        display: flex;
-        margin-left: -rem;
-        margin-top: -2.rem;
-    }
-
-    .forgotten_link {
-        display: flex;
-        margin-top: 0.5rem;
-        margin-left: -2.5rem;
-        font-size: 14px;
-        font-weight: 400;
-    }
-
-    .links_text {
-        margin-top: 5rem;
-
-    }
-
-    .new_user{
-        margin-left: -3rem;
-        margin-top: 14rem;
-    }
-
-    .privacy_text{
-        margin-top: 32rem;
-        margin-left: -1rem;
-    }
-
-    .help_text{
-        margin-top: 32rem;
-        margin-left: -7rem;
-    }
-
-    .language{
-        margin-top: 32rem;
-        margin-left: -17rem;
-    }
-
-    .arrow{
-        margin-top: 32rem;
-        margin-left: -0.1rem;
-    }
-
-}

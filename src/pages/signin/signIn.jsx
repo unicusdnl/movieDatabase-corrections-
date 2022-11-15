@@ -3,7 +3,6 @@ import './signin.css'
 import { useRef, useState, state} from 'react';
 import emailjs from 'emailjs-com';
 import logo from '../../images/logo.svg'
-import arrow from '../../images/arrow.png'
 import {AiOutlineEyeInvisible, AiOutlineEye} from 'react-icons/ai'
 import {GoSignIn} from 'react-icons/go'
 import {RiLockPasswordFill} from 'react-icons/ri'
@@ -28,78 +27,72 @@ const Signin = () => {
     setstate(prevState =>! prevState);
   }
 
-
   return (
-    <section id='signin'>    
-        <div className="sign_container">               
-          <div className="logo_signin">
-            <img src= {logo} alt="logo" />                  
-          </div>  
-          </div>
-             
-        <h3 className="top_header">Sign In</h3>     
-                 
-        <form ref={form} onSubmit={sendEmail} className="form_signin">
-        <div className="user_name2">
-            <label className="label_username">Username/Email</label>
-            <input className="user_input" 
+    <section id='signin'>
+       
+    <div className="left-pane-signin">
+       <div className="logo-signin">
+       <img src={logo} alt="logo" />
+       <h3 id='top_header'>Sign In</h3> 
+    </div>
+    </div>
+
+    <div className="middle-pane-btn" id='middle-img' >
+      <GoSignIn className='middle-pane-signin'/>
+    </div>
+
+    <div className="right-pane-signin">
+        <Link to="/signup" className='sign-up-link'>New User?
+        <em> Sign up now</em>
+        </Link>
+    </div>
+
+    <form ref={form} onSubmit={sendEmail} className="form_signin">
+
+        <div className="user-label" id='user-textbox'>
+          <label className='signin-label'>Username / Email Address</label>
+            <input className="user-input" 
                    type="text" 
-                   name="name"
+                   name="name"                   
              />
+               <MdEmail className='email_image'/>
           </div>
 
-          <div className="signin_password">
-            <label className="pass_label">Password</label>
-            <input className="pass_input" 
-                   type="text" 
-                   name="name"
+          <div className="user-label" id='password-textbox'>
+            <label className='signin-label'>Password</label>
+            <input className="user-input" 
+                   type="password" 
+                   name="username"
              />
+
+                <RiLockPasswordFill className='password_image'/>
           </div>
           
             <button className='eye' onClick={toggleBtn}>
-              {state ? <AiOutlineEyeInvisible/> :
+                {state ? <AiOutlineEyeInvisible/> :
                      <AiOutlineEye/>
-              }
+                }
             </button>
 
-            <RiLockPasswordFill className='password_image'/>
-            <MdEmail className='email_image'/>
+            <h3 id= 'remember'> Remember me </h3>
+            <input type="checkbox" id='bottom-links-checkbox'/>
 
-            <button type='submit' className='signin_submit'>
-              <Link to="/home">Sign In</Link>
-            </button>
-
-            <div className="links_text">
-            <h3 className="remember_me">
-              Remember me
-            </h3>
-            <input type="checkbox" className='checkbox'/>
-            <Link to="/reset" className="forgotten_link">Forgotten Password?</Link>
+            <div className="bottom-links">                   
+              <Link to="/reset" className='forgotten'>Forgotten Password?</Link>
             </div>
 
-              <div className="new_user">
-             <h2 className="new">New User?
-             <span>
-              <Link to="/signup" className='forgotten_sp_link'> Sign up now </Link>             
-            </span>
-            </h2> 
-            </div>     
+            <div className="signin_btn" id='signin-submit-btn'>
+              <Link to="/home" className='signin-btn-text'>Sign In</Link>
+            </div>
+          
         </form>
 
-            <h3 className='privacy_text'>
-             <Link to="/home" clasName='help_text'>Privacy</Link> 
-              </h3>  
-
-              <h3 className='help_text'>
-              <Link to="/home" clasName='help_text'>Help</Link>             
-              </h3>                 
-
-              <h3 className='language'>
-              English(United Kingdom)
-              </h3>    
-              <img src= {arrow} alt="logo" className='arrow' />
-              <GoSignIn className='signin_image'/>
-      
+        <div className="line">
+          <p id= 'copyright'>
+            &copy; 2022. 
+            <em>Movie Database Inc.</em>
+          </p>
+        </div>
     </section>
   )
 }

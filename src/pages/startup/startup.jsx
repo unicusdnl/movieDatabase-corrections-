@@ -47,7 +47,7 @@ const Startup = () => {
               Already have an account?
             </div>
 
-            <div className="custom-btn">
+            <div className="custom-btn" id='signin-btn'>
               <Link to="/signin" className='custom-btn-text'>Sign in</Link>
             </div>
 

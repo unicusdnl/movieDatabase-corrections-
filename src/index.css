@@ -45,7 +45,7 @@ body{
   background: linear-gradient(to right, rgba(159,79,107,100), rgba(182,77,94,100));
   line-height: 1.7rem;
   font-family: "Poppins", sans-serif;
-  
+  text-decoration: none;  
 }
 
 /*==================GENERAL STYLES/*==================*/

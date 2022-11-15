@@ -1,0 +1,32 @@
+      <div className="nav-right" id='navigation'>
+        <Link to= '/home'
+              className='nav-link'>
+              Home
+        </Link>
+
+    <div className="subnav">
+    <div className="dropdown">
+      <button className="dropbtn">
+        Movies
+       </button>
+       <div className="dropdown-content">             
+        <Link to= '/downloads'>Popular</Link>
+        <Link to= '/tvlistings' >Now Playing</Link>
+        <Link to= '/series' >Just Added</Link>
+        </div>  
+        </div>
+
+      <button className="dropbtn">
+        Series
+       </button>
+       <div className="dropdown-content"> 
+        <Link to= '/downloads' >Popular</Link>
+        <Link to= '/tvlistings' >Now Playing</Link>
+        <Link to= '/series' >Just Added</Link>
+        </div> 
+        <div className="avatar" >     
+        <HiOutlineSearch id='avatar-shape'/>
+        <BsFillBellFill id='avatar-shape'/>
+        <HiUserCircle id='avatar-shape'/>
+        </div>
+        </div>

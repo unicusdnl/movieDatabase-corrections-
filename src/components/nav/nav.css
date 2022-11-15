@@ -1,73 +1,100 @@
-header {
-    height: 10vh;
-    line-height: 10vh;
-    background-image: linear-gradient(to right bottom, rgba(159, 79, 107, 100), rgba(182, 77, 94, 100), rgba(182, 77, 94, 100),
-            rgba(182, 77, 50, 90), rgba(182, 77, 50, 70), rgba(182, 77, 50, 30));
+@import url('https://fonts.googleapis.com/css2?famil=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+#nav {
+    --button-width: 280px;
+    --button-img: 100px;
+    --textbox-width: 100rem;
+
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: -4rem;
+    height: 11vh;
     color: var(--header-color);
-    margin-top: -24.7rem;
-    position: relative;
-    z-index: 999;
+    background: var(--color-bg-variant);
+    width: 100%;
 }
 
-.navbar {
-    display: flex;
-    font-size: 15px;
-    margin-left: 18rem;
-    margin-top: -2.7rem;
-    gap: 1.5rem;
-    align-items: center;
+.nav-logo img{
+    margin-left: 15rem;
+    height: 70px;
+    width: 70px;
 }
 
-.nav_bar {
-    display: flex;
-    gap: 1rem;
-    margin-top: -1rem;
-    align-items: center;
-    font-size: 13px;
-}
-
-.navigation {
-    display: flex;
-    margin-left: -3rem;
-    margin-top: -0.2rem;
-    align-items: center;
-    gap: 1rem;
-}
-
-.nav_logo {
-    display: flex;
-    width: 4rem;
-    margin-left: 7rem;
-    margin-top: 0.5rem;
-}
-
-header a {
+.nav-right > #nav-link {
     color: var(--header-color);
 }
 
-.account_icons {
+#navigation{
+    text-decoration: transparent;
+    font-weight: 600;
+    margin-left: 27rem;
+    margin-top: -3rem;
     display: flex;
-    gap: 1rem;
-    margin-left: 75rem;
-    margin-top: -2.5rem;
-    font-size: 14px;  
+    flex-direction: row;
+    gap: 2rem;
 }
 
-.subscribe {
+.avatar{
+    display: flex;
+    gap: 0.9rem;
+    margin-top: -1.5rem;
+    margin-left: 42rem;
+}
+
+#avatar-shape{
+    font-size: 1.3rem;
+}
+
+.dropbtn {
     display: inline-block;
-    background: var(--header-color);
-    color: var(--color-bg-variant);
-    font-weight: 500;
-    font-size: 14.5px;
-    margin-left: 81rem;
-    margin-top: -2.3rem;
-    height: 5vh;
-    width: 10rem;
-    border-radius: 0.5rem;
-}
+   
+    background: transparent;
+    color: var(--header-color);
+    font-weight: 600;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    width: 20%;
+    height: 2.5rem;
+    margin-top: 0.1rem;
+    background-color: var(--header-color);
+    color: var(--color-dark);
+    text-indent: 0.7rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: -2.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  
+  .dropdown-content a {
+    color: var(--color-dark);
+    text-decoration: none;
+    display: block;
+    margin-top: 3rem;
+  }
+  
+  .dropdown-content:hover {
+    color: var(--color-text);
+  }
+  
+  .dropdown:hover  .dropdown-content {
+    display: block;
+  }
 
-.toggle {
-    margin-top: 5rem;
-    margin-left: 10rem;
-    width: 5rem;
-}
+  
+  .dropdown:hover > .dropbtn {
+     background-color: transparent;
+    }
+
