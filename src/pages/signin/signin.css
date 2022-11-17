@@ -18,7 +18,7 @@
 }
 
 .logo-signin img{
-    margin-left: -45rem;
+    margin-left: -35rem;
     height: 70px;
     width: 70px;
 }
@@ -36,20 +36,23 @@
 }
 
 .form_signin{
-    margin-top: 11rem;
+    margin-top: 15rem;
+    margin-left: -30.5rem;
 }
 
 .left-pane-signin{
+    display: flex;
     justify-content: start;
 }
 
 .right-pane-signin{
+    display: flex;
     justify-content: flex-end;
     margin-top: 1.5rem;
 }
 
 .right-pane-signin > .sign-up-link{   
-    margin-left: 30rem;
+    margin-left: 20rem;
     text-decoration: none;
     color: var(--header-color);
 }
@@ -107,11 +110,13 @@ em:hover{
     margin-top: 0.6rem;
 }
 
-.user-label > .signin-label{
-    margin-top: -10rem;
-    margin-bottom: -4rem;
-    margin-left: -10rem;
+.user-label > .signin-label{ 
     font-size: 17px;
+    color: var(--color-dark);
+}
+
+#user-textbox > .signin-label{
+    margin-top: 5rem;
     color: var(--color-dark);
 }
 
@@ -142,6 +147,14 @@ em:hover{
 
 #user-textbox > .user-input {
     margin-left: -12.5rem;
+}
+
+#password-textbox > .user-input{
+    margin-top: -4rem;
+}
+
+.user-label > .user-input{
+    margin-top: -7rem;
 }
 
 .eye{
@@ -200,7 +213,7 @@ em:hover{
 }
 
 #signin-submit-btn{
-    margin-top: 4rem;
+    margin-top: 9rem;
 }
 
 #signin-submit-btn:hover{

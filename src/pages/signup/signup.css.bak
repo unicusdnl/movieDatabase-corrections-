@@ -586,3 +586,82 @@ const Signup = () => {
 }
 
 export default Signup
+
+
+
+
+
+
+.signup-form{
+    margin-top: 1rem;
+}
+
+.signup-label > .user-signup-label{
+    margin-top: -5rem;
+    margin-bottom: -4rem;
+    margin-left: -10rem;
+    font-size: 17px;
+    color: var(--color-dark);
+}
+
+#signup-textbox > .signup-input{
+    margin-left: -12.5rem;
+    margin-top: 3rem;
+}
+
+.signup-input{
+    margin-top: 2rem;
+    margin-left: -4.5rem;
+    height: 10%;
+    border-radius: 5px;
+    text-indent: 5%;
+    width: 17.5rem;
+    height: 2.5rem;
+    background: var(--header-color);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#signup-submit-btn > .signup-btn-text{
+    margin-left: 6.5rem;
+    font-weight: 700;
+    color: var(--header-color); 
+    text-decoration: none;  
+}
+
+#signup-submit-btn{
+    margin-top: 2rem;
+}
+
+.signup-btn{
+    background-color: var(--color-bg-variant);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    width: var(--button-width);
+    transition: outline 200ms;
+    margin-top: 0.5rem;
+    margin-left: -10rem;
+}
+
+#confirm-password > .signup-input{
+    margin-left: -8.5rem;
+    margin-top: 4rem;
+}
+
+.right-pane-signup > .signup-btn-link{
+    margin-left: 35rem;
+    text-decoration: none;
+    color: var(--header-color);
+}
+
+.right-pane-signup{
+    margin-top: 1rem;
+}
+
+.signup-btn-link:hover{
+    color: var(--color-bg-variant);
+    text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#signup-submit-btn:hover{
+    outline: 1px solid var(--header-color);
+}
