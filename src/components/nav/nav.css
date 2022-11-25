@@ -28,9 +28,7 @@
     display: flex;
     flex-flow: row wrap;
     margin-top: -4rem;
-    height: 11vh;
-    color: var(--header-color);
-    background: var(--color-bg-variant);
+    height: 11vh; 
     width: 100%;
 }
 
@@ -45,41 +43,61 @@
   justify-content: center;
   align-items:center;
   gap: 2rem;
-  margin: 0 2rem;
+  margin: -4.5rem 0;
 }
 
 #nav-menu > .nav-list {
   list-style: none;
-  font-weight: bold;
+  font-weight: 700;
   position: relative;
   padding: 1.5rem 1rem;
   cursor: pointer;
+  margin-left: -15rem;
+  margin-right: 15rem;
 }
 
-.nav-list:hover,
-.nav-list:focus{
-  color: var(--clr-primary);
+.nav-list:hover{
+  color: var(--clr-gray400);
+}
+
+.nav-item-drop li:hover,
+.nav-item-drop li:focus{
+  background-color: var(--header-color);
+  width: 9rem;
 }
 
 .nav-item-drop{
   list-style: none;
-  font-weight: bold;
+  font-weight: 600;
   position: relative;
   cursor: pointer;
   padding: 1.5rem 1rem;
 }
 
+.nav-item-drop li{
+  margin-left: -0.5rem;
+}
+
+.nav-list:hover ul{
+  opacity: 1;
+  visibility: visible;
+}
+
 .nav-list > .nav-item-drop{
   position: absolute;
-  top: 4rem;
-  left: -1rem;
-  box-shadow: 0 0 10px var(--clr-gray400);
-  background-color: var(--header-color);
+  top: 4.5rem;
+  left: 1rem;
+  box-shadow: 0 0 10px var(--clr-gray150);
+  background-color: var(--clr-gray150);
   border-radius: var(--radius);
+  width: 10rem;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 200ms ease-in-out;
 }
 
 li{
@@ -89,33 +107,20 @@ li{
   transition: background-color 200ms ease-in-out;
 }
 
+
+
 .nav-logo img{
-    margin-left: 15rem;
+    margin-left: 10rem;
     height: 70px;
     width: 70px;
     transition: fill 250ms  ease-in;
 }
 
-.nav-right > #nav-link {
-    color: var(--header-color);
-}
-
-#navigation{
-    text-decoration: transparent;
-    font-weight: 600;
-    margin-left: 27rem;
-    margin-top: -3rem;
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-}
-
 .avatar{
     display: flex;
-    gap: 0.5rem;
-    justify-content: flex-end; 
-    margin-top: -1.5rem;
-    
+    gap: 1rem;   
+    margin: -3rem 0 0 78rem;
+    z-index: 1;
 }
 
 .avatar > #avatar-shape{
@@ -123,6 +128,8 @@ li{
   justify-content: flex-end; 
   font-size: 1.3rem;
 }
+
+
 
 
   

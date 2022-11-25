@@ -16,10 +16,22 @@ const Footer = () => {
       </div>
 
     <ul className='footer-permalinks'>
-     <li><Link to='/about' id='footer-menu'>About US</Link></li>
+     <li><Link to='/about' id='footer-menu'>About us</Link></li>
      <li> <Link to='/about' id='footer-menu'>FAQ</Link></li>
      <li><Link to='/about' id='footer-menu'>Corporate Relation</Link></li>
      <li><Link to='/about' id='footer-menu'>Help Center</Link></li>
+     </ul>
+
+     <ul className='footer-mid-links'>
+     <li><Link to='/about' id='footer-menu'>About us</Link></li>
+     <li> <Link to='/about' id='footer-menu'>FAQ</Link></li>
+     <li><Link to='/about' id='footer-menu'>Corporate Relation</Link></li>
+     <li><Link to='/about' id='footer-menu'>Help Center</Link></li>
+     </ul>
+
+     <ul className='footer-right-links'>
+     <li><Link to='/about' id='footer-menu'>About us</Link></li>
+     <li> <Link to='/about' id='footer-menu'>FAQ</Link></li>
      </ul>
 
     <div className="subscribe-box">

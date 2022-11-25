@@ -25,12 +25,12 @@ const Startup = () => {
             
             <div className="custom-btn">
               <img src={google} alt="google logo" className="custom-btn-img" />
-              <Link to="/signin" className='custom-btn-text'>Sign up with Google</Link>
+              <Link to="/signup" className='custom-btn-text'>Sign up with Google</Link>
             </div>
 
             <div className="custom-btn" id='apple-signin-btn'>
               <img src={apple} alt="apple logo" className="custom-btn-img" />
-              <Link to="/signin" className='custom-btn-text'>Sign up with Apple</Link>
+              <Link to="/signup" className='custom-btn-text'>Sign up with Apple</Link>
             </div>
             
             <h3 id='signin-divider'>OR</h3>

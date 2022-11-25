@@ -1,6 +1,5 @@
 import React from 'react'
 import './nav.css'
-
 import logo from '../../images/logo.svg'
 import {HiUserCircle, HiOutlineSearch} from 'react-icons/hi'
 import {BsFillBellFill} from 'react-icons/bs'
@@ -17,7 +16,7 @@ const Nav = () => {
 
       <nav className='nav' id='nav-menu'>
         <li className='nav-list'>Home</li>
-        <li className='nav-list'>Movies & Series
+        <li className='nav-list'>Movies 
         <ul className='nav-item-drop'>
           <li>Action</li>
           <li>Romance</li>
@@ -29,7 +28,7 @@ const Nav = () => {
         <ul className='nav-item-drop'>
             <li>Uploads</li>
             <li>Downloads</li>
-            <lil>Settings</lil>
+            <li>Settings</li>
         </ul>
         </li>      
       </nav>
@@ -38,6 +37,12 @@ const Nav = () => {
         <HiOutlineSearch id='avatar-shape'/>
         <BsFillBellFill id='avatar-shape'/>
         <HiUserCircle id='avatar-shape'/>
+        <li className='nav-list'>
+        <ul className='nav-item-drop'>
+            <li>Logout</li>
+            <li>Change User</li>
+        </ul>
+        </li>
         </div>
       </div> 
 

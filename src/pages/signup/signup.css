@@ -8,122 +8,82 @@
     --button-width: 280px;
     --button-img: 100px;
     --textbox-width: 100rem;
-
-    display: flex;
-    flex-flow: row wrap;
-    margin-top: 0px;
-    margin-left: 50rem;
-    height: 100vh;
-    color: var(--header-color);
+    --button:20rem;
 }
 
 .logo-signup img{
-    margin-left: -45rem;
     height: 70px;
-    width: 70px;
+    width: 70px;   
+    margin: -3.7rem 0 0 10rem;
 }
 
 #header{
-    margin-left: 25rem;
-    margin-top: 4rem;
-    font-weight: 600;
-    font-size: 1.3rem;
+    margin: 5rem 0 0 67.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
     color: var(--color-bg-variant);
 }
 
 .signup-form:before{
     content:" ";
     display: block;
-    height: 340px;
-    width: 22rem;
+    height: 33.5rem;
+    width: 27rem;
     position: absolute;
-    top: 20%;
-    left: 39.5%;
-    background: var(--header-color);
+    top: 14%;
+    left: 62%;
+    background: var(--header-background);
     z-index: -1;
-    border-radius: 0 0 3rem 3rem;
     opacity: 1;
 }
 
-.signup-form:after{
-    content:" ";
-    display: block;
-    height: 108px;
-    width: 22rem;
-    position: absolute;
-    top: 4%;
-    left: 39.5%;
-    background: var(--header-color);
-    z-index: -1;
-    border-radius: 3rem 3rem 0 0;
-    opacity: 0.8;
-}
-
-.left-pane-signup > .logo-signup{
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 10rem;
-}
-
-.signup-label > .user-signup-label{
-    margin-left: -22rem;
-    margin-top: 1.5rem;
-    color: var(--color-dark);
-    font-weight: 500;
+.signup-form{
+    margin: -27rem 0 0 1.5rem;  
 }
 
 .user-signup-label{
-    margin-top: -5rem;
-}
-
- #signup-textbox{
-    margin-top: 5rem;
-}
-
-.signup-input{
-    margin-top: 2rem;    
-    height: 10%;
-    border-radius: 5px;
-    text-indent: 5%;
-    width: 17.5rem;
-    height: 2.5rem;
-    background: var(--header-color);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.user-signup-label > #signup-textbox{
-  
-  margin-top: 10rem;
-}
-
-.signup-form{
-    margin-top: -3.5rem;
-    margin-left: -38rem;
-}
-
-.signup-label > .user-signup-label{
-    margin-top: -15rem;
-    margin-bottom: -4rem;
-    margin-left: -10rem;
-    font-size: 17px;
     color: var(--color-dark);
+    margin-left: 62rem;
+    margin-top: 1rem;
 }
 
-#signup-textbox > .signup-input{
-    margin-left: -12.5rem;
-    margin-top: 3rem;
+.signup-label > .user-signup-label {
+    margin-top: 1rem;
+}
+
+#password-textbox > .user-signup-label{
+    margin-top: -14rem;
+    margin-left: 57rem;
+}
+
+#confirm-password-textbox > .user-signup-label{
+    margin-left: 57rem;
+    margin-top: 0;
 }
 
 .signup-input{
-    margin-top: 2rem;
-    margin-left: -4.5rem;
+     
+    margin-left: 62rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     height: 10%;
-    border-radius: 5px;
+    border-radius: 30px;
     text-indent: 5%;
-    width: 17.5rem;
+    width: var(--button);
     height: 2.5rem;
     background: var(--header-color);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#password-textbox > .signup-input{
+    width: 20rem;
+    margin-left: 56.5rem;
+    border-radius: 30px;
+}
+
+#confirm-password-textbox > .signup-input{
+    margin-left: 56.5rem;
+    border-radius: 30px;
+    width: 20rem;
 }
 
 #signup-submit-btn > .signup-btn-text{
@@ -134,45 +94,75 @@
 }
 
 #signup-submit-btn{
-    margin-top: 2rem;
+    width: var(--button);
+    margin-top: 4rem;
+    margin-left: 56rem;
+    border-radius: 40px;
 }
 
 .signup-btn{
-    background-color: var(--color-bg-variant);
+    background: linear-gradient(to right, rgba(159,79,107,100), rgba(182,77,94,100));;
     padding: 0.5rem 1rem;
     border-radius: 8px;
     width: var(--button-width);
+    height: 3rem;
     transition: outline 200ms;
     margin-top: 0.5rem;
     margin-left: -10rem;
 }
 
-#confirm-password > .signup-input{
-    margin-left: -8.5rem;
-    margin-top: 2rem;
+.signup-link{
+    margin: -10rem 0 0 82rem;
+    font-size: 1.2rem;
 }
 
-.right-pane-signup > .signup-btn-link{
-    margin-left: 35rem;
+.signup-btn-link{
     text-decoration: none;
-    color: var(--header-color);
-}
-
-.right-pane-signup{
-    margin-top: 5rem;
-}
-
-label{
-    margin-bottom: 5rem;
-    margin-left: 5rem;
+    color: var(--color-bg-variant);
+    font-weight: 700;    
 }
 
 .signup-btn-link:hover{
-    color: var(--color-bg-variant);
-    text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: var(--color-dark);
 }
 
 #signup-submit-btn:hover{
     outline: 1px solid var(--header-color);
 }
 
+ em:hover{
+    color: var(--color-secondary);
+}
+
+.column > .left-side-image{
+    height: 100%;
+    width: 100%;
+    margin: -3.8rem 0 0 0;
+}
+
+.column{
+    width: 50%;
+    margin-left: 10rem;
+    margin-top: 6.8rem;
+}
+
+.column .content {
+    position: absolute;
+    bottom: 4.8rem;
+    background: var(--color-bg-variant);
+    background: var(--color-dark, 0.5); 
+    width: 50%;
+    padding: 20px;
+    color: var(--header-color);
+    font-family: Poppins;   
+  }
+
+  .content h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .content p{
+    font-size: 1.2rem;
+    font-weight: 400;
+  }

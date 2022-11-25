@@ -11,25 +11,18 @@
 
     display: flex;
     flex-flow: row wrap;
-    margin-top: 23rem;
-    height: 45vh;
+    margin-top: 50rem;
+    height: 55vh;
     color: var(--header-color);
-    background: var(--color-bg-variant);
+    background: linear-gradient(to right, rgba(159, 79, 107, 100), rgba(182, 77, 94, 100));
     width: 100%;
 }
 
-.footer_logo img{
+.footer_logo img {
     margin-top: 7rem;
-    margin-left: 15rem;
-    height: 80px;
-    width: 80px;
-}
-
-#footer-copyright{
-    font-size: 0.9rem;
-    margin-left: 45rem;
-    margin-top: 6.2rem;
-    font-weight: 600;
+    margin-left: 1.5rem;
+    height: 25%;
+    width: 25%;
 }
 
 .footer-socials {
@@ -40,61 +33,91 @@
     font-size: 1.5rem;
 }
 
-#socials > .permalinks{
+#socials>.permalinks {
     display: flex;
-    flex-direction: row;    
-    margin-left: -3.5rem;
-    margin-top: -3rem;
+    flex-direction: row;
 }
 
-em{
+em {
     font-weight: 400;
 }
 
-#socials a{
-    color: var(--header-color);
+#socials a {
+    color: var(--color-bg);
 }
 
-.subscribe-box input{
+.footer-socials {
+    margin-left: 63rem;
+    margin-top: -4.5rem;
+}
+
+.subscribe-box input {
     border-radius: 70rem;
     height: 6vh;
-    width: 20%;
-    background: var(--header-color);
+    width: 18%;
+    background: var(--color-bg);
     text-indent: 1rem;
     margin-left: 65rem;
     margin-top: -8rem;
-} 
+}
 
-.subscribe-box  .send-subscribe{
+.subscribe-box .send-subscribe {
     margin-top: -1rem;
     margin-left: -2rem;
     color: var(--color-dark);
 }
 
-#send-subscribe{
+#send-subscribe {
     color: var(--color-dark);
-    margin-left: 82rem;
-    margin-top: -7rem;
+    margin-left: 80.5rem;
+    margin-top: -7.2rem;
 }
 
-.footer-permalinks{
+.subscribe-box {
+    margin-left: -2.5rem;
+    margin-top: 8rem;
+}
+
+.footer-permalinks {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 0.2rem;
-    margin-left: 25rem;
-    margin-top: -5rem;
+    margin-left: 24rem;
+    margin-top: -8rem;
+    font-weight: 300;
 }
 
-#footer-menu{
+.footer-mid-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.2rem;
+    margin: -11.5rem 0 0 43rem;
+    font-weight: 300;
+}
+
+.footer-right-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.2rem;
+    margin: -10.5rem 0 0 60rem;
+    font-weight: 300;
+}
+
+#footer-menu {
     text-decoration: none;
-    color: var(--header-color);
+    color: var(--color-bg);
 }
 
-
-
-
-
-
+#footer-copyright {
+    color: var(--color-bg);
+    font-weight: 700;
+    margin-top: 4.5rem;
+    font-size: 1rem;
+    margin-left: 27rem;
+    font-weight: 600;
+}
 
 
