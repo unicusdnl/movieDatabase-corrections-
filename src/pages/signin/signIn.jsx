@@ -57,7 +57,8 @@ const Signin = () => {
           <label className='signin-label'>Username / Email Address</label>
             <input className="user-input" 
                    type="text" 
-                   name="name"                   
+                   name="name"  
+                   required                 
              />
                <MdEmail className='email_image'/>
           </div>
@@ -67,6 +68,9 @@ const Signin = () => {
             <input className="user-input" 
                    type="password" 
                    name="username"
+                   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                   title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" 
+                   required
              />
 
                 <RiLockPasswordFill className='password_image'/>
@@ -85,9 +89,9 @@ const Signin = () => {
               <Link to="/reset" className='forgotten'>Forgotten Password?</Link>
             </div>
 
-            <div className="signin_btn" id='signin-submit-btn'>
+            <button className="signin_btn" id='signin-submit-btn'>
               <Link to="/home" className='signin-btn-text'>Sign In</Link>
-            </div>
+            </button>
           
         </form> 
     </div>

@@ -15,7 +15,7 @@ const Reset = () => {
       </div>
 
       <p className='reset-note'>
-        Enter the email or mobile number you used <br/>in creating this acccount!
+        Enter the email or mobile number you  <br/> used in creating this acccount!
       </p>
 
       <div className="reset-image" id='log-image'>
@@ -27,18 +27,19 @@ const Reset = () => {
           </div>
 
       <form className='reset-form'>
-        <div className="user-label" id='password-textbox'>
-            <label className='signin-label'>Email</label>
+      <div className="user-label" id='user-textbox'>
+          <label className='signin-label'>Username / Email Address</label>
             <input className="user-input" 
-                   type="password" 
-                   name="username"
+                   type="text" 
+                   name="name"  
+                   required                 
              />
-        </div>
+          </div>
 
-        <div className="reset-btn" id='reset-submit-btn'>
-              <Link to="/home" className='reset-btn-text'>Continue</Link>
-            </div>
-          
+      
+        <button className="reset-btn" id='reset-submit-btn'>
+              <Link to="/reset" className='reset-btn-text'>Continue</Link>
+            </button>
       </form>
 
       <Footer/>

@@ -5,6 +5,7 @@ const card = () => {
   return (
     <body>
     <header>
+      
         <div className="box">  
           <div className="content"></div>           
         </div>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?famil=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 * {
     box-sizing: border-box;
@@ -87,7 +87,8 @@
 }
 
 #signup-submit-btn > .signup-btn-text{
-    margin-left: 6.5rem;
+    display: flex;
+    justify-content: center;
     font-weight: 700;
     color: var(--header-color); 
     text-decoration: none;  

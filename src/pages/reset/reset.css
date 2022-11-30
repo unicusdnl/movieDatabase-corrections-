@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?famil=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 * {
     box-sizing: border-box;
@@ -15,24 +15,25 @@
 .reset_container img{
     height: 70px;
     width: 70px;   
-    margin: -11rem 0 0 10rem;
+    margin: -10.5rem 0 0 10rem;
 }
 
 #reset_header{
-    margin: 10rem 0 0 68rem;
+    margin: 9rem 0 0 68rem;
     font-size: 1.3rem;
     font-weight: 500;
     color: var(--color-bg-variant);
 }
 
 .reset-form{
-    margin: -22rem 0 0 57.5rem;  
+    margin: -20rem 0 0 57.5rem;  
 }
 
 .reset-note {
     margin-left: 63rem ;
-    margin-top: 3rem;
-    font-size: 1rem;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: 300;
   }
 
 
@@ -51,7 +52,7 @@
 
 .reset-image{
     margin-left: 10rem;
-    margin-top: 13rem;
+    margin-top: 12.2rem;
 }
 
 .reset-image .reset-content{
@@ -89,18 +90,30 @@
         width: var(--button);
         height: 3rem;
         transition: outline 200ms;
-        margin-top: -1rem;
+        margin-top: 8rem;
         margin-bottom: -10rem;
         margin-left: 5.5rem;
         border-radius: 30px;
   }
 
   #reset-submit-btn > .reset-btn-text{
-    margin-left: 7rem;
+    display: flex;
+    justify-content: center;
     font-weight: 700;
     color: var(--header-color); 
     text-decoration: none;  
 }
+
+#Footer{
+  margin-top: 20rem;
+}
+
+
+
+
+
+
+
 
 
 

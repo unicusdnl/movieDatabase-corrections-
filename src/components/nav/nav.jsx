@@ -34,10 +34,11 @@ const Nav = () => {
       </nav>
 
       <div className="avatar" >     
-        <HiOutlineSearch id='avatar-shape'/>
-        <BsFillBellFill id='avatar-shape'/>
-        <HiUserCircle id='avatar-shape'/>
-        <li className='nav-list'>
+        <HiOutlineSearch id='right-search'/>
+        <BsFillBellFill id='right-avatar'/>
+        
+        <li id='avatar-shape'>
+        <HiUserCircle id='right-avatar'/>
         <ul className='nav-item-drop'>
             <li>Logout</li>
             <li>Change User</li>

@@ -54,9 +54,9 @@ const Signup = () => {
               />
           </div>
 
-          <div className="signup-btn" id='signup-submit-btn'>
+          <button className="signup-btn" id='signup-submit-btn'>
               <Link to="/signin" className="signup-btn-text">Sign up</Link>
-            </div>      
+            </button>      
         </div>        
        </form>
 

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?famil=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 *,
 *::before, 
@@ -58,6 +58,7 @@
 
 .nav-list:hover{
   color: var(--clr-gray400);
+  font-weight: 500;
 }
 
 .nav-item-drop li:hover,
@@ -87,7 +88,7 @@
   position: absolute;
   top: 4.5rem;
   left: 1rem;
-  box-shadow: 0 0 10px var(--clr-gray150);
+  border: 2px solid var(--clr-gray300);
   background-color: var(--clr-gray150);
   border-radius: var(--radius);
   width: 10rem;
@@ -107,8 +108,6 @@ li{
   transition: background-color 200ms ease-in-out;
 }
 
-
-
 .nav-logo img{
     margin-left: 10rem;
     height: 70px;
@@ -119,15 +118,63 @@ li{
 .avatar{
     display: flex;
     gap: 1rem;   
-    margin: -3rem 0 0 78rem;
+    margin: -2.5rem 0 0 77rem;
     z-index: 1;
 }
 
-.avatar > #avatar-shape{
+#right-avatar{
   display: flex; 
   justify-content: flex-end; 
   font-size: 1.3rem;
+  margin: -0.3rem 0 0 0;
 }
+
+#right-search{
+  margin: -0.3rem 0 0 2rem;
+  font-size: 1.3rem;
+}
+
+.avatar > #avatar-shape{
+  list-style: none;
+  font-weight: 700;
+  position: relative;
+  padding: 1.5rem 1rem;
+  cursor: pointer;
+  margin-left: -2rem;
+  margin-right: 10rem;
+}
+
+#avatar-shape > #right-avatar{
+  margin: -1.8rem 0 0 0.8rem;
+}
+
+#avatar-shape:hover{
+
+    color: var(--clr-gray400)
+}
+
+#avatar-shape > .nav-item-drop{
+  position: absolute;
+  top: 2.5rem;
+  left: 1.5rem;
+  border: 2px solid var(--clr-gray300);
+  background-color: var(--clr-gray150);
+  border-radius: var(--radius);
+  width: 10rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 200ms ease-in-out;
+}
+
+#avatar-shape:hover ul{
+  opacity: 1;
+  visibility: visible;
+}
+
 
 
 

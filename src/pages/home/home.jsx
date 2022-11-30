@@ -11,7 +11,8 @@ const Home = () => {
    <section id='home'>
 
     <Nav/>
-    <Header/>    
+    <Header/>  
+    
     <Card/>
     <Footer/>  
 
