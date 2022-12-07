@@ -24,13 +24,16 @@
 }
 
 .headings-column > .headings-list {
+    position: absolute;
     display: flex;
     flex-flow: row;
+    column-gap: 20px;
+
 }
 
 .headings-column{
     margin-top: 26rem;
-    margin-left: 9rem;
+    margin-left: 6.5rem;
     display: flex ;
 }
 

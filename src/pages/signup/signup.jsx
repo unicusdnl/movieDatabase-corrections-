@@ -1,10 +1,53 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './signup.css'
 import logo from '../../images/logo.svg'
 import { Link  } from 'react-router-dom'
 import signinPoster from '../../images/signinPoster.jpg'
 
-const Signup = () => {
+function Signup () {
+
+  const initialValues = {
+    username:"",
+    password:"",
+    confirm_password:"",
+  };
+  const [formValues, setFormValues] = useState(initialValues);
+  const [formErrors, setFormErrors] = useState (initialValues);
+  const [isSubmit, setIsSubmit] =useState (false);
+
+  const handleChange = (e) => {
+    const {name, value} = e.target;
+    setFormValues({...formValues, [name]: value});
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setFormErrors(validate(formValues));
+    setIsSubmit(true);
+  }
+
+  useEffect(() => {
+    console.log(formErrors);
+    if(Object.keys(formErrors).length === 0 && isSubmit) {
+      console.log(formValues)
+    }
+  },[formErrors]);
+
+  const validate = (values) => {
+    const errors = {};
+    const regex = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/g
+    if(!values.username){
+      errors.username = "Username is required"
+    }
+    if(!values.password){
+      errors.password = "Choose a Password!"
+    }
+    if(!values.confirm_password){
+      errors.confirm_password = "Enter your password!"
+    }
+    return errors;
+  };
+  
   return (
     <section id= 'signup'>
 
@@ -27,8 +70,8 @@ const Signup = () => {
               </div>
           </div>
 
-       <form className="signup-form">
-
+       <form className="signup-form" onSubmit={handleSubmit}>
+        
         <div className="signup-label" id='signup-textbox'>
           <label className="user-signup-label">
             Username / Email Address
@@ -36,28 +79,38 @@ const Signup = () => {
           <input className="signup-input"
                  text='text'
                  name='username'
+                 value={formValues.username}
+                 onChange={handleChange}
           />
+          <p className='error'>{formErrors.username}</p>
           </div>
 
           <div className="signup-label" id='password-textbox'>
             <label className="user-signup-label">Password</label>
             <input className="signup-input"
                    type='password'
-                   name='text'
+                   name='password'
+                   value={formValues.password}
+                   onChange={handleChange}
               />
+            </div>    
+              <p className='error'>{formErrors.password}</p>
 
           <div className="signup-label" id='confirm-password-textbox'>
             <label className="user-signup-label">Confirm Password</label>
             <input className="signup-input"
                    type='password'
-                   name='text'
+                   name='confirm_password'
+                   value={formValues.confirm_password}
+                   onChange={handleChange}
               />
           </div>
+          <p>{formErrors.confirm_password}</p>
 
-          <button className="signup-btn" id='signup-submit-btn'>
+          <button className="signup-btn" id='signup-submit-btn' >
               <Link to="/signin" className="signup-btn-text">Sign up</Link>
             </button>      
-        </div>        
+             
        </form>
 
        

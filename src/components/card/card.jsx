@@ -1,12 +1,17 @@
 import React from 'react'
 import './card.css'
+import images from '../../images/images.jpg'
 
 const card = () => {
   return (
     <body>
     <header>
       
-        <div className="box">  
+        <div className="hero-header">
+        <div className="content"></div>
+        </div>
+        <div className="box"> 
+          <img src={images} alt="images" />
           <div className="content"></div>           
         </div>
         <div className="box"> 

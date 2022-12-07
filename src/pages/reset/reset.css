@@ -99,9 +99,10 @@
   #reset-submit-btn > .reset-btn-text{
     display: flex;
     justify-content: center;
-    font-weight: 700;
+    font-weight: 500;
     color: var(--header-color); 
     text-decoration: none;  
+    font-size: 1.2rem;
 }
 
 #Footer{

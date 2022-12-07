@@ -129,13 +129,16 @@ em:hover{
 }
 
 #password-textbox > .user-input{
-    margin-top: 0.5rem;
+    margin-top: 0.8rem;
+    z-index: -1;
 }
 
 .eye{
-    margin-top: -12rem;
-    margin-left: 5.9rem;
+    z-index: 1;
+    margin-top: -11rem;
+    margin-left: 23rem;
     color: var(--color-dark);
+    font-size: 1.2rem;
     background: transparent;
 }
 
@@ -179,11 +182,12 @@ em:hover{
 }
 
 #signin-submit-btn > .signin-btn-text{
-    font-weight: 700;
+    font-weight: 500;
     color: var(--header-color); 
     text-decoration: none;  
     display: flex;
     justify-content: center;
+    font-size: 1.2rem;
 }
 
 #signin-submit-btn{

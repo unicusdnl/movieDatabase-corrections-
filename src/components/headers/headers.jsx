@@ -12,6 +12,12 @@ const Headers = () => {
               <li id='headings-li'>Streaming Now</li>
               <li id='headings-li'>ON TV</li>
             </ul>
+
+            <ul className='headings-list'>
+              <li>Popular</li>
+              <li id='headings-li'>Series</li>
+              <li id='headings-li'>Uploads</li>
+            </ul>
   
         </div>
     </section>

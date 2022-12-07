@@ -46,6 +46,7 @@
 }
 
 .custom-btn {
+    
     background-color: var(--header-color);
     padding: 0.5rem 1rem;
     border-radius: 100px;
@@ -75,10 +76,15 @@
 #apple-signin-btn,
 #mobile-signin-btn {
     margin-top: 1rem;
+    width: 50%;
+}
+
+#apple-signin-btn > .custom-btn-img{
+    margin-left: -1.5rem;
 }
 
 #mobile-signin-btn > .custom-btn-text{
-    margin-left: 2.5rem;
+    margin-left: 0.5rem;
     font-weight: 700;
     color: var(--header-color);
 }
@@ -86,11 +92,15 @@
 #mobile-signin-btn{
     background: var(--color-dark);
     color: var(--header-color);
+    width: 50%;
 }
 
 #signin-btn > .custom-btn-text{
-    margin-left: 6rem;
- 
+    margin-left: 0.5rem; 
+}
+
+#signin-btn{
+    width: 50%;
 }
 
 #signin-divider {

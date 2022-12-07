@@ -163,8 +163,8 @@ const Subscription = () => {
             SELECT
           </button>
           </div>
-
           <Footer/> 
+          
     </section>
   )
 }

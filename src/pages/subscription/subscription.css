@@ -133,3 +133,8 @@
     color: var(--color-secondary);
 }
 
+#subscription > #Footer {
+    width: 100%;
+    
+}
+

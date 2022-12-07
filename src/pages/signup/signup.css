@@ -18,7 +18,7 @@
 }
 
 #header{
-    margin: 5rem 0 0 67.5rem;
+    margin: 5rem 0 0 66rem;
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--color-bg-variant);
@@ -43,7 +43,7 @@
 
 .user-signup-label{
     color: var(--color-dark);
-    margin-left: 62rem;
+    margin-left: 61.5rem;
     margin-top: 1rem;
 }
 
@@ -53,17 +53,17 @@
 
 #password-textbox > .user-signup-label{
     margin-top: -14rem;
-    margin-left: 57rem;
+    margin-left: 56rem;
 }
 
 #confirm-password-textbox > .user-signup-label{
-    margin-left: 57rem;
-    margin-top: 0;
+    margin-left: 61.5rem;
+    margin-top: -9.8rem;
 }
 
 .signup-input{
      
-    margin-left: 62rem;
+    margin-left: 61rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     height: 10%;
@@ -76,12 +76,13 @@
 
 #password-textbox > .signup-input{
     width: 20rem;
-    margin-left: 56.5rem;
+    margin-left: 55.5rem;
     border-radius: 30px;
 }
 
 #confirm-password-textbox > .signup-input{
-    margin-left: 56.5rem;
+    margin-left: 61rem;
+    margin-top: -8rem;
     border-radius: 30px;
     width: 20rem;
 }
@@ -89,15 +90,16 @@
 #signup-submit-btn > .signup-btn-text{
     display: flex;
     justify-content: center;
-    font-weight: 700;
+    font-weight: 500;
     color: var(--header-color); 
     text-decoration: none;  
+    font-size: 1.2rem;
 }
 
 #signup-submit-btn{
     width: var(--button);
-    margin-top: 4rem;
-    margin-left: 56rem;
+    margin-top: -2rem;
+    margin-left: 61rem;
     border-radius: 40px;
 }
 
@@ -167,3 +169,4 @@
     font-size: 1.2rem;
     font-weight: 400;
   }
+

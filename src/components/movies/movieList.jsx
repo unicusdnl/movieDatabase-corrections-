@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import MovieCard from '../movies/movieCard'
+import React, { useEffect, useState } from "react";
+import MovieCard from "./movieCard";
 import axios from "axios";
 
 const MovieList = () => {

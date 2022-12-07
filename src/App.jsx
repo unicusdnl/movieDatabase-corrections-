@@ -23,6 +23,7 @@ const App = () => {
         <Route path="/footer" element={<Footer />} />  
         <Route path="/subscription" element={<Subscription />} /> 
         <Route path="/movieList" element={<MovieList />} />  
+        
       </Routes>
     </BrowserRouter>
   )

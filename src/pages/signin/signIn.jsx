@@ -1,14 +1,14 @@
-import React from 'react'
-import './signin.css'
+import React from 'react';
+import './signin.css';
 import { useRef, useState, state} from 'react';
 import emailjs from 'emailjs-com';
-import logo from '../../images/logo.svg'
-import {AiOutlineEyeInvisible, AiOutlineEye} from 'react-icons/ai'
-import {GoSignIn} from 'react-icons/go'
-import {RiLockPasswordFill} from 'react-icons/ri'
-import {MdEmail} from 'react-icons/md'
+import logo from '../../images/logo.svg';
+import {AiOutlineEyeInvisible, AiOutlineEye} from 'react-icons/ai';
+import {GoSignIn} from 'react-icons/go';
+import {RiLockPasswordFill} from 'react-icons/ri';
+import {MdEmail} from 'react-icons/md';
 import { Link } from 'react-router-dom';
-import asset from '../../images/asset.jpg'
+import asset from '../../images/asset.jpg';
 
 const Signin = () => {
   const form = useRef();
@@ -26,7 +26,7 @@ const Signin = () => {
   const toggleBtn = () => {
 
     setstate(prevState =>! prevState);
-  }
+  };
 
   return (
     <section id='signin'>
@@ -95,10 +95,6 @@ const Signin = () => {
           
         </form> 
     </div>
-  
-
-       
-
     </section>
   )
 }

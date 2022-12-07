@@ -5,7 +5,6 @@ import Card from '../../components/card/card'
 import './home.css'
 import Header from '../../components/headers/headers'
 
-
 const Home = () => {
   return (
    <section id='home'>
@@ -14,6 +13,7 @@ const Home = () => {
     <Header/>  
     
     <Card/>
+    <script src='movieList.js'></script>
     <Footer/>  
 
    </section>
