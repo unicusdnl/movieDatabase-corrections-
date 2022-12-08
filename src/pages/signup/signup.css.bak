@@ -1,667 +1,84 @@
-/*=============background & header=============*/
-.signup_form {
-    width: 50%;
-    margin-left: 4rem;
-    margin-top: 1.5rem;
-}
-
-.signup_wrapper {
-    display: flex;
-    background: transparent;
-    transition: var(--transition);
-    padding: 1.2rem;
-    align-items: center;
-    border-radius: 0.5rem;
-    width: 50%;
-    margin-left: 16rem;
-    margin-top: 2.5rem;
-    height: 84vh;
-    place-content: center;
-    align-items: center;
-}
-
-.logo_signup img {
-    width: 5rem;
-    margin-left: -40.8rem;
-    margin-top: -20rem;
-    align-items: center;
-    place-content: center;
-}
-
-.signup_lock {
-    background: var(--header-color);
-    color: var(--color-bg-variant);
-    width: 40px;
-    height: 40px;
-    padding: 10px;
-    text-align: center;
-    border-radius: 50%;
-    border: 2px solid #fff;
-    margin: 0 10px;
-    margin-left: 38rem;
-    margin-top: -33rem;
-}
-
-.title {
-    margin-top: -30rem;
-    margin-left: 35rem;
-    color: var(--header-color);
-    font-size: 17px;
-    font-weight: 700;
-}
-
-/*=============form=============*/
-.signup_label {
-    margin-left: 38rem;
-    margin-top: -10rem;
-    font-size: 13px;
-}
-
-label{
-    color: var(--header-color);
-    font-size: 13px;
-    border-radius: 0.5rem;
-}
-
-.firstname_input {
-    display: flex;
-    margin-top: -2rem;
-    margin-left: 22.5rem;
-    width: 30%;
-    height: 7vh;
-    padding: 1.1rem;
-    line-height: 0.51rem;
-    border: 1.5px solid;
-    background: transparent;
-    color: var(--header-color);
-    border-radius: 0.5rem;
-}
-
-.f_name {
-    display: inline-block;
-    margin-top: 1rem;
-    margin-left: 23rem;
-    font-size: 13px;
-}
-
-.last_input {
-    display: inline-block;
-    margin-top: -6.5rem;
-    margin-left: 35rem;
-    width: 30%;
-    height: 7vh;
-    padding: 1.1rem;
-    line-height: 0.51rem;
-    border: 1.5px solid;
-    background: transparent;
-    color: var(--header-color);
-    align-items: center;
-    text-align: center;
-    border-radius: 0.5rem;
-}
-
-.l_name {
-    display: inline-block;
-    margin-top: -2.5rem;
-    margin-left: 36rem;
-    font-size: 13px;
-}
-
-.email_input {
-    display: inline-block;
-    margin-top: -4rem;
-    margin-left: 22.5rem;
-    width: 60.9%;
-    height: 7vh;
-    padding: 1.1rem;
-    line-height: 0.51rem;
-    border: 1.5px solid;
-    background: transparent;
-    color: var(--header-color);
-    border-radius: 0.5rem;
-}
-
-.email {
-    display: inline-block;
-    margin-top: 1.5rem;
-    margin-left: -23.5rem;
-}
-
-.mobile_input {
-    margin-top: -2rem;
-    margin-left: 37.5rem;
-    width: 16%;
-    padding: 1.1rem;
-    line-height: 0.51rem;
-}
-
-.username_input {
-    display: inline-block;
-    margin-top: -11.5rem;
-    margin-left: 37rem;
-    width: 45%;
-    height: 7vh;
-    padding: 1.1rem;
-    line-height: 0.51rem;
-    border: 1.5px solid;
-    background: transparent;
-    color: var(--header-color);
-    border-radius: 0.5rem;
-}
-
-.username {
-    display: inline-block;
-    margin-top: 11rem;
-    margin-left: -14.5rem;
-}
-
-.password_input {
-    margin-top: -11.5rem;
-    margin-left: 37rem;
-    width: 44.6%;
-    height: 7vh;
-    padding: 1.1rem;
-    line-height: 0.51rem;
-    border: 1.5px solid;
-    background: transparent;
-    color: var(--header-color);
-    border-radius: 0.5rem;
-}
-
-.password {
-    margin-top: 3.5rem;
-    margin-left: -14.5rem;
-}
-
-.signup_eye {
-    display: flex;
-    padding: 0.5rem;
-    margin-top: -10rem;
-    margin-left: 44.5rem;
-    background: transparent;
-    font-size: 18px;
-    color: var(--header-color);
-}
-
-
-.checkbox_signup {
-    display: inline-block;
-    color: var(--header-color);
-    margin-left: 30rem;
-    margin-top: 4rem;
-}
-
-.submit_button {
-    margin-top: 2rem;
-    margin-left: 21.2rem;
-    width: 25rem;
-    color: var(--header-color);
-    background: #c06767;
-    padding: 1.2rem;
-    border-radius: 0.5rem;
-    font-size: 15px;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.submit_button:hover {
-    background: var(--color-hover);
-}
-
-.signin_btn {
-    display: inline-block;
-    color: var(--color-bg-variant);
-    background: var(--header-color);
-    padding: 1.2rem;
-    border-radius: 0.5rem;
-    font-size: 15px;
-    font-weight: 600;
-    margin-left: 70rem;
-    margin-top: -8.5rem;
-    width: 20vh;
-    height: 6vh;
-    line-height: 0.5px;
-    text-decoration: none;
-}
-
-.signin_btn Link {
-    color: var(--color-bg-variant);
-}
-
-.signin_btn:hover {
-    background: var(--color-hover);
-    border: transparent;
-    color: var(--color-dark);
-    font-weight: 600;
-}
-
-.updates {
-    display: flex;
-    font-size: 12.5px;
-    color: var(--color-secondary);
-    font-weight: 300;
-    line-height: 1.3rem;
-    margin-left: 23rem;
-    margin-top: -1rem;
-
-}
-
-.signup_update {
-    display: flex;
-    width: 0.8rem;
-    height: 0.8rem;
-    margin-left: 21.7rem;
-    margin-top: 0.5rem;
-}
-
-.signup_updates {
-    display: inline-block;
-    margin-top: 0.8rem;
-    margin-left: 1rem;
-}
-
-.privacy_text_signup {
-    font-size: 12px;
-    color: var(--header-color);
-    margin-left: 44rem;
-    margin-top: 0.8rem;
-}
-
-.help_text_signup {
-    display: flex;
-    font-size: 12px;
-    color: var(--header-color);
-    margin-left: 48rem;
-    margin-top: -1.4rem;
-}
-
-.language_signup {
-    display: flex;
-    font-size: 12px;
-    color: var(--header-color);
-    margin-left: 26.5rem;
-    margin-top: -1.5rem;
-}
-
-.arrow {
-    display: flex;
-    width: 49rem;
-    margin-top: 20rem;
-    margin-left: -20.8rem;
-}
-
-@media screen and (max-width:600px) {
-    .signup_wrapper {
-        background: transparent;
-        display: flex;
-        flex-direction: column;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .logo_signup img {
-        margin-left: -11.5rem;
-        margin-top: -19rem;
-        width: 4rem;
-    }
-
-    .title {
-        margin-left: 8.5rem;
-        margin-top: -32rem;
-        font-size: 16px;
-    }
-
-    .signup_lock {
-        margin-left: 11.5rem;
-        margin-top: -29.5rem;
-    }
-
-    .email {
-        margin-left: -8rem;
-        margin-top: -24rem;
-        font-size: 14px;
-    }
-
-    .email_input {
-        margin-left: 10rem;
-        margin-top: 0.1rem;
-        width: 70%;
-        height: 5vh;
-    }
-
-    .password {
-        margin-left: -8rem;
-        margin-top: 0.5rem;
-    }
-
-    .password_input {
-        margin-left: 10rem;
-        margin-top: 0.1rem;
-        width: 70%;
-        height: 5vh;
-    }
-
-    .retry_password {
-        margin-top: 0.5rem;
-        margin-left: -7rem;
-    }
-
-    .retry_input {
-        margin-left: 10rem;
-        margin-top: 0.1rem;
-        width: 60%;
-    }
-
-    .submit_button {
-        margin-left: 3rem;
-        width: 100%;
-        margin-top: 6rem;
-    }
-
-    .signin_btn {
-        display: inline-block;
-        width: 58%;
-        margin-top: 24rem;
-        margin-left: 6rem;
-        padding: 1.6rem;
-        align-items: center;
-        line-height: 1px;
-        place-content: center;
-        color: var(--color-bg-variant);
-        border-color: var(--header-color);
-
-    }
-
-    .username {
-        display: none;
-    }
-
-    .username_input {
-        display: none;
-    }
-
-    .firstname_input {
-        display: none;
-    }
-
-    .f_name {
-        display: none;
-    }
-
-    .l_name {
-        display: none;
-    }
-
-    .last_input {
-        display: none;
-    }
-
-    .mobile_input {
-        display: none;
-    }
-
-    .mobile_number {
-        display: none;
-    }
-
-    .submit_button {
-        margin-top: 11.5rem;
-        margin-left: 2rem;
-        width: 115%;
-    }
-
-    .signup_update {
-        margin-left: 2rem;
-    }
-
-    .updates {
-        margin-left: 3.5rem;
-        margin-top: -1rem;
-    }
-
-    .signup_eye {
-        margin-left: 14.5rem;
-        margin-top: -2.7rem;
-    }
-
-    .signup_updates {
-        display: inline-block;
-    }
-
-    .updates {
-        display: flex;
-        justify-content: center;
-
-    }
-
-    .language_signup {
-        font-size: 10px;
-        margin-left: 6.1rem;
-    }
-
-    .privacy_text_signup {
-        font-size: 10px;
-
-    }
-
-    .signup_label {
-        margin-left: 10rem;
-    }
-
-
-
-}
-
-
-import React, {useRef, useState, state} from 'react'
+import React from 'react'
 import './signup.css'
 import logo from '../../images/logo.svg'
 import { Link  } from 'react-router-dom'
-import {HiLockClosed} from 'react-icons/hi'
-import {AiOutlineEyeInvisible, AiOutlineEye} from 'react-icons/ai'
+import signinPoster from '../../images/signinPoster.jpg'
+import {useForm} from 'react-hook-form'
+export default function Form() {
 
-
-const Signup = () => {
-  const [values, setValues] = useState ({
-    name:"",
-    email:"",
-    mobile:"",
-    password:"",
-  });
-
-  const handleChange = (event) =>{
-    setValues({
-      ...values,
-      [event.target.name]: event.target.value,
-    });
-  };
-
-    const handleFormSubmit = (event) => {
-    event.preventDefault();
-  };
-
-  const [state, setstate]= useState (false)
-
-  const toggleBtn = () => {
-
-    setstate(prevState =>! prevState);
-  }
+const {
+  register,
+  formState: { errors },
+  handleSubmit,
+    } = useForm();
+const onSubmit = (data) => console.log(data);
 
   return (
-    <div className="container signup_container">
-      <div className="signup_wrapper">
 
-        <div className="logo_signup">
-          <img src={logo} alt="signup_logo"/>          
+    <section id= 'signup'>
+
+        <div className="logo-signup">
+          <img src={logo} alt="logo"/>
+           <h3 id='header'>Create Account!</h3> 
         </div>
-      </div>
       
-      <HiLockClosed className="signup_lock"/>
-      
-      
-      <h3 className="title"> Create Account!</h3>
-      
-      <button className="signin_btn">
-        <Link to="/signin">Sign In</Link>
-        </button>
-    
+        <div className="signup-link" id='signin-link'>
+          <Link to="/signin" className='signup-btn-link'>
+            Sign In
+          </Link>
+        </div>
 
-        <form className="signup_form">          
-           <label className="f_name">FirstName</label>
-            <input className="firstname_input" 
-                   type="text" 
-                   name="name"
-                   value={values.name}
-                   onChange={handleChange}
-           />
-          
-            <label className="l_name">LastName</label>
-            <input className="last_input" 
-                   type="text" 
-                   name="name"
-                   value={values.name}
-                   onChange={handleChange}
-           />
-        
-            <label className="email">Email Address</label>
-            <input className="email_input"
-                   type="email"
-                   name="email"
-                   value={values.email}
-                   onChange={handleChange}
-            />
-            <div className="username">
-            <label className="signup_label">Username</label>
-            <input className="username_input" 
-                   type="username" 
-                   name="username"
-                   value={values.username}
-                   onChange={handleChange}
-             />
-            </div>
-            <div className="password">
-            <label className="signup_label">Password</label>
-            <input className="password_input" 
-                   type="password" 
-                   name="password"
-                   value={values.password}
-                   onChange={handleChange}
-             />
-            </div>
-            <div className="eye2">
-            <button className='signup_eye' onClick={toggleBtn}>
-              {state ? <AiOutlineEyeInvisible/> :
-                     <AiOutlineEye/>
-              }
-            </button>
-            </div>
-
-            <div className="signup_updates">      
-            <input type="checkbox" className='signup_update'/>
-            <h3 className="updates">
-              I want to recieve marketing, promotions and updates via email
-            </h3>
-             <div>
-            <button className="submit_button" onClick={handleFormSubmit}>
-               <Link to="/home">Sign Up</Link>
-            </button>
-            </div> 
-            </div>     
-           </form> 
-
-           <h3 className='privacy_text_signup'>
-             <Link to="/home" clasName='privacy_text'>Privacy</Link> 
-              </h3>  
-
-              <h3 className='help_text_signup'>
-              <Link to="/home" clasName='help_text'>Help</Link>             
-              </h3>                 
-
-              <h3 className='language_signup'>
-              English(United Kingdom)
-              </h3>    
-          
+          <div className="column" id='log-image'>
+              <img src={signinPoster} alt='signin-left-pane' className='left-side-image'  />
+              <div className="content">
+                <h1>Watch it all here first</h1>
+                <p>Lorem ipsum..</p>
+              </div>
           </div>
+
+       <form className="signup-form" onSubmit={handleSubmit(onSubmit)}>
+        
+        <div className="signup-label" id='signup-textbox'>
+          <label className="user-signup-label">
+            Username / Email Address
+          </label>
+          <input className="signup-input"
+                 text='text'
+                 name='username'
+                 {...register("username",{required: true})} />
+                 <error>
+                    {errors.username?.type === "required" && "Enter username or email address"}
+                 </error>
+          </div>
+
+          <div className="signup-label" id='password-textbox'>
+            <label className="user-signup-label">Password</label>
+            <input className="signup-input"
+                   type='password'
+                   name='password'
+                   register= {{...register("password-textbox")}}
+              />
+            </div>    
+        
+          <div className="signup-label" id='confirm-password-textbox'>
+            <label className="user-signup-label">Confirm Password</label>
+            <input className="signup-input"
+                   type='password'
+                   name='confirm_password'
+                   register= {{...register("confirm-password-textbox")}}
+              />
+          </div>
+
+          <button className="signup-btn" id='signup-submit-btn' >
+              <Link to="/signin" className="signup-btn-text" type='submit'>Sign up</Link>
+            </button>      
+             <input className="button" type="submit" />
+       </form>
+
        
+    </section>
+    
   )
 }
 
-export default Signup
 
-
-
-
-
-
-.signup-form{
-    margin-top: 1rem;
-}
-
-.signup-label > .user-signup-label{
-    margin-top: -5rem;
-    margin-bottom: -4rem;
-    margin-left: -10rem;
-    font-size: 17px;
-    color: var(--color-dark);
-}
-
-#signup-textbox > .signup-input{
-    margin-left: -12.5rem;
-    margin-top: 3rem;
-}
-
-.signup-input{
-    margin-top: 2rem;
-    margin-left: -4.5rem;
-    height: 10%;
-    border-radius: 5px;
-    text-indent: 5%;
-    width: 17.5rem;
-    height: 2.5rem;
-    background: var(--header-color);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-#signup-submit-btn > .signup-btn-text{
-    margin-left: 6.5rem;
-    font-weight: 700;
-    color: var(--header-color); 
-    text-decoration: none;  
-}
-
-#signup-submit-btn{
-    margin-top: 2rem;
-}
-
-.signup-btn{
-    background-color: var(--color-bg-variant);
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    width: var(--button-width);
-    transition: outline 200ms;
-    margin-top: 0.5rem;
-    margin-left: -10rem;
-}
-
-#confirm-password > .signup-input{
-    margin-left: -8.5rem;
-    margin-top: 4rem;
-}
-
-.right-pane-signup > .signup-btn-link{
-    margin-left: 35rem;
-    text-decoration: none;
-    color: var(--header-color);
-}
-
-.right-pane-signup{
-    margin-top: 1rem;
-}
-
-.signup-btn-link:hover{
-    color: var(--color-bg-variant);
-    text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-#signup-submit-btn:hover{
-    outline: 1px solid var(--header-color);
-}

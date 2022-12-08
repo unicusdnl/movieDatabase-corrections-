@@ -8,6 +8,7 @@ import Footer from './pages/footer/footer'
 import Subscription from './pages/subscription/subscription'
 import MovieList from './components/movies/movieList'
 
+
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 const App = () => {

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import MovieCard from "./movieCard";
 import axios from "axios";
 
@@ -13,7 +13,7 @@ const MovieList = () => {
 
     }, [])
 
-    return <div className= "flex pb-5 px-5 overflow-x-auto ">
+    return <div className= "d-flex flex-wrap align-content-start ">
         {movies.map ((movie, index)=>{
             return <MovieCard key= {index} {...movie} />
         })}

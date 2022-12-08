@@ -52,13 +52,13 @@
 }
 
 #password-textbox > .user-signup-label{
-    margin-top: -14rem;
+    margin-top: -13.1rem;
     margin-left: 56rem;
 }
 
 #confirm-password-textbox > .user-signup-label{
     margin-left: 61.5rem;
-    margin-top: -9.8rem;
+    margin-top: -7.2rem;
 }
 
 .signup-input{
@@ -82,7 +82,7 @@
 
 #confirm-password-textbox > .signup-input{
     margin-left: 61rem;
-    margin-top: -8rem;
+    margin-top: -5.2rem;
     border-radius: 30px;
     width: 20rem;
 }
@@ -104,7 +104,7 @@
 }
 
 .signup-btn{
-    background: linear-gradient(to right, rgba(159,79,107,100), rgba(182,77,94,100));;
+    background: linear-gradient(to right, rgba(159,79,107,100), rgba(182,77,94,100));
     padding: 0.5rem 1rem;
     border-radius: 8px;
     width: var(--button-width);
@@ -170,3 +170,25 @@
     font-weight: 400;
   }
 
+  .button {
+    cursor: pointer;
+    color: #fff;
+    background: linear-gradient(to right, rgba(159,79,107,100), rgba(182,77,94,100));
+    border: 0;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 30px;
+    width: 19.5rem;
+    height: 2.8rem;
+    transition: outline 200ms;
+    margin-top: 1rem;
+    margin-left: 61.5rem;
+    z-index: 1;
+  }
+
+  error {
+    font-size: 10px;
+    color: #ff6774;
+    margin-left: -19rem;
+    font-size: 0.7rem;
+  }

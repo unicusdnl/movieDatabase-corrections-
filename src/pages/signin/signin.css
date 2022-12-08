@@ -57,7 +57,7 @@
 }
 
 .right-signin-pane{
-    margin: -12rem 0 0 75.5rem;
+    margin: -12rem 0 0 75rem;
 }
 
 .sign-up-link > em{
@@ -92,7 +92,7 @@ em:hover{
     margin-top: 4rem;
     margin-bottom: -0.5rem;
     font-weight: 500;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 .user-input {   
