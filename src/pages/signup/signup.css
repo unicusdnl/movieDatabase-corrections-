@@ -9,6 +9,7 @@
     --button-img: 100px;
     --textbox-width: 100rem;
     --button:20rem;
+    font-family: Poppins;
 }
 
 .logo-signup img{
@@ -18,10 +19,11 @@
 }
 
 #header{
-    margin: 5rem 0 0 66rem;
-    font-size: 1.5rem;
+    margin: 5rem 0 0 67rem;
+    font-size: 1.3rem;
     font-weight: 700;
     color: var(--color-bg-variant);
+    border: 0;
 }
 
 .signup-form:before{
@@ -52,20 +54,19 @@
 }
 
 #password-textbox > .user-signup-label{
-    margin-top: -13.1rem;
+    margin-top: -9.5rem;
     margin-left: 56rem;
 }
 
 #confirm-password-textbox > .user-signup-label{
     margin-left: 61.5rem;
-    margin-top: -7.2rem;
+    margin-top: -3.5rem;
 }
 
-.signup-input{
-     
+.signup-input{     
     margin-left: 61rem;
     margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.7rem;
     height: 10%;
     border-radius: 30px;
     text-indent: 5%;
@@ -77,41 +78,16 @@
 #password-textbox > .signup-input{
     width: 20rem;
     margin-left: 55.5rem;
+    margin-top: 0.2rem;
     border-radius: 30px;
 }
 
 #confirm-password-textbox > .signup-input{
     margin-left: 61rem;
-    margin-top: -5.2rem;
+    margin-top: -1.7rem;
+    margin-bottom: -10rem;
     border-radius: 30px;
     width: 20rem;
-}
-
-#signup-submit-btn > .signup-btn-text{
-    display: flex;
-    justify-content: center;
-    font-weight: 500;
-    color: var(--header-color); 
-    text-decoration: none;  
-    font-size: 1.2rem;
-}
-
-#signup-submit-btn{
-    width: var(--button);
-    margin-top: -2rem;
-    margin-left: 61rem;
-    border-radius: 40px;
-}
-
-.signup-btn{
-    background: linear-gradient(to right, rgba(159,79,107,100), rgba(182,77,94,100));
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    width: var(--button-width);
-    height: 3rem;
-    transition: outline 200ms;
-    margin-top: 0.5rem;
-    margin-left: -10rem;
 }
 
 .signup-link{
@@ -149,7 +125,7 @@
     margin-top: 6.8rem;
 }
 
-.column .content {
+.column .content{
     position: absolute;
     bottom: 4.8rem;
     background: var(--color-bg-variant);
@@ -181,14 +157,28 @@
     width: 19.5rem;
     height: 2.8rem;
     transition: outline 200ms;
-    margin-top: 1rem;
+    margin-top: 7rem;
     margin-left: 61.5rem;
-    z-index: 1;
   }
 
-  error {
+  error{
+    display: flex;
     font-size: 10px;
     color: #ff6774;
-    margin-left: -19rem;
-    font-size: 0.7rem;
+    margin-left: 61.5rem;
+    margin-top: -0.7rem;
+    margin-bottom: -1rem;
+    font-size: 0.7rem;   
   }
+
+  #confirm{
+    margin-top: 1rem;
+    margin-bottom: -4.5rem;
+  }
+
+  #new{
+    margin-top: -0.5rem;
+    margin-left: 56rem;
+  }
+
+

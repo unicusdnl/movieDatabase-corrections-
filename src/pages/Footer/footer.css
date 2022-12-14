@@ -52,7 +52,7 @@ em {
 }
 
 .subscribe-box input {
-    border-radius: 70rem;
+    border-radius: 0.5rem;
     height: 6vh;
     width: 18%;
     background: var(--color-bg);
@@ -69,13 +69,13 @@ em {
 
 #send-subscribe {
     color: var(--color-dark);
-    margin-left: 80rem;
+    margin-left: 81rem;
     margin-top: -7.2rem;
 }
 
 .subscribe-box {
     margin-left: -2.5rem;
-    margin-top: 8rem;
+    margin-top: 9rem;
 }
 
 .footer-permalinks {
@@ -97,15 +97,6 @@ em {
     font-weight: 300;
 }
 
-.footer-right-links {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 0.2rem;
-    margin: -10.5rem 0 0 60rem;
-    font-weight: 300;
-}
-
 #footer-menu {
     text-decoration: none;
     color: var(--color-bg);
@@ -118,6 +109,18 @@ em {
     font-size: 1rem;
     margin-left: 27rem;
     font-weight: 600;
+}
+
+.txt{
+    font-size: 1.1rem;
+    margin-left: 62.5rem;
+    margin-top: -10rem;
+    font-weight: 600;
+}
+
+#footer-header{
+    font-weight: 600;
+    font-size: 1.1rem;
 }
 
 

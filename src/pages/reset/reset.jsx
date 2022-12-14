@@ -4,8 +4,18 @@ import './reset.css'
 import logo from '../../images/logo.svg'
 import Footer from '../footer/footer'
 import resetImage from '../../images/resetImage.jpg'
+import {useForm} from 'react-hook-form'
 
-const Reset = () => {
+function Reset () {
+  const {
+    handleSubmit, 
+    register,
+    formState: {errors},
+  } = useForm();
+
+  const  onSubmit = (data) => {
+    console.log(data);
+  };
 
   return (
     <section id= 'reset'>
@@ -15,7 +25,7 @@ const Reset = () => {
       </div>
 
       <p className='reset-note'>
-        Enter the email or mobile number you  <br/> used in creating this acccount!
+        Enter the email or mobile number you used <br/>in creating this acccount!
       </p>
 
       <div className="reset-image" id='log-image'>
@@ -26,19 +36,25 @@ const Reset = () => {
             </div>
           </div>
 
-      <form className='reset-form'>
+      <form className='reset-form' onSubmit={handleSubmit(onSubmit)}>
       <div className="user-label" id='user-textbox'>
-          <label className='signin-label'>Username / Email Address</label>
+          <label className='signin-label'>Email Address</label>
             <input className="user-input" 
                    type="text" 
-                   name="name"  
-                   required                 
-             />
+                   name="email"  
+                   {...register("email",{
+                    required: true,
+                    pattern: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/i,
+                    })} />
+                   <error id='reset-error'>
+                      {errors.email?.type === "required" && "*Email is required"}
+                   </error>
           </div>
 
-      
-        <button className="reset-btn" id='reset-submit-btn'>
-              <Link to="/reset" className='reset-btn-text'>Continue</Link>
+            <button className="reset-btn" id='reset-submit-btn'>
+              <Link to="/reset" className='reset-btn-text'>
+                Next
+              </Link>
             </button>
       </form>
 

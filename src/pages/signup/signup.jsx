@@ -43,14 +43,17 @@ function Signup () {
         
         <div className="signup-label" id='signup-textbox'>
           <label className="user-signup-label">
-            Username / Email Address
+             Email Address
           </label>
           <input className="signup-input"
-                 text='text'
-                 name='username'
-                 {...register("username",{required: true})} />
+                 type='email'
+                 name='email'
+                 {...register("email",{
+                  required: true,
+                  pattern: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/i,
+                  })} />
                  <error>
-                    {errors.username?.type === "required" && "*Enter username or email address"}
+                    {errors.email?.type === "required" && "*Email is required"}
                  </error>
           </div>
 
@@ -58,15 +61,15 @@ function Signup () {
             <label className="user-signup-label">Password</label>
             <input className="signup-input"
                    type='password'
-                   name='password'
-                  {...register("password",{
+                   name='new_password'
+                  {...register("newPassword", {
                     required: true,
                     minLength: 5,
                     maxLength: 20,
                    })}
                    />
-              <error>
-                {errors.password?.type === "minLength" && "required" && "Enter password between 5-20 characters"}
+              <error id='new'>
+                {errors.newPassword?.type === "required" && "*Choose a password"}
               </error>
             </div>    
         
@@ -81,8 +84,8 @@ function Signup () {
                     maxLength: 20,
                   })}
                 />
-                <error>
-                  {errors.confirmPassword?.type === "required" && "Enter password between 5-20 characters"}
+                <error id='confirm'>
+                  {errors.confirmPassword?.type === "required" && "*Enter password between 5-20 characters"}
                 </error>
           </div>
 

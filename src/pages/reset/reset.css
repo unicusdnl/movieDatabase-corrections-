@@ -16,6 +16,7 @@
     height: 70px;
     width: 70px;   
     margin: -10.5rem 0 0 10rem;
+    z-index: 1;
 }
 
 #reset_header{
@@ -32,8 +33,9 @@
 .reset-note {
     margin-left: 63rem ;
     margin-top: 1rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 300;
+    justify-content: center;
   }
 
 
@@ -52,7 +54,8 @@
 
 .reset-image{
     margin-left: 10rem;
-    margin-top: 12.2rem;
+    margin-top: 13rem;
+    z-index: -1;
 }
 
 .reset-image .reset-content{
@@ -90,8 +93,7 @@
         width: var(--button);
         height: 3rem;
         transition: outline 200ms;
-        margin-top: 8rem;
-        margin-bottom: -10rem;
+        margin-top: 10rem;
         margin-left: 5.5rem;
         border-radius: 30px;
   }
@@ -99,14 +101,23 @@
   #reset-submit-btn > .reset-btn-text{
     display: flex;
     justify-content: center;
-    font-weight: 500;
-    color: var(--header-color); 
+    font-weight: 400;
+    color: #ffff; 
     text-decoration: none;  
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 #Footer{
-  margin-top: 20rem;
+  margin-top: 9rem;
+}
+
+#reset-error{
+  color: #ff6774;
+  margin-left: 6rem;
+  margin-top: 0.5rem;
+  margin-bottom: -2rem;
+  font-size: 0.7rem; 
+  z-index: 1;  
 }
 
 

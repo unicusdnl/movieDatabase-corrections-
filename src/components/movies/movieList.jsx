@@ -10,13 +10,16 @@ const MovieList = () => {
         axios.get('https://api.themoviedb.org/3/tv/popular?api_key=41467446ef4c8f2ffa78fc5c6692fbd5&language=en-US&page=1').then(response=>{
             setMovies(response.data.results)
         }).catch(err=>{console.log(err)})
-
     }, [])
 
-    return <div className= "d-flex flex-wrap align-content-start ">
-        {movies.map ((movie, index)=>{
-            return <MovieCard key= {index} {...movie} />
+    return <div className= "container-md w-75 h-100">
+        <div className="row g-2">
+        {movies.map ((movie, index) =>{
+            return <div className="col-md-2">            
+             <MovieCard key= {index} {...movie} />
+            </div>
         })}
+    </div>
     </div>
 }
 

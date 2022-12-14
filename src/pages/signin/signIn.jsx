@@ -1,9 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './signin.css';
-import { useRef, useState} from 'react';
-import emailjs from 'emailjs-com';
 import logo from '../../images/logo.svg';
-import {AiOutlineEyeInvisible, AiOutlineEye} from 'react-icons/ai';
+import { AiFillEyeInvisible, AiFillEye } from 'react-icons/ai';
 import {GoSignIn} from 'react-icons/go';
 import {RiLockPasswordFill} from 'react-icons/ri';
 import {MdEmail} from 'react-icons/md';
@@ -11,28 +9,27 @@ import { Link } from 'react-router-dom';
 import asset from '../../images/asset.jpg';
 import {useForm} from "react-hook-form"
 
-const Signin = () => {
-  const form = useRef();
-  
-  const sendEmail = (e) => {
-    e.preventDefault();
+function Signin () {
+  const {
+    handleSubmit, 
+    register,
+    formState: {errors},
+  } = useForm();
 
-    emailjs.sendForm('service_xv6h93s', 'template_5hyvwet', form.current, 'J1pfg6qx4w4pyOJVJ')
-
-    e.target.reset()
+  const onSubmit = (data) => {
+    console.log(data);
   };
 
   const [state, setstate]= useState (false)
 
   const toggleBtn = () => {
-
+    
     setstate(prevState =>! prevState);
   };
 
   return (
     <section id='signin'>
 
-      
     <div className="logo-signin">
       <img src={logo} alt="logo" /> 
         <GoSignIn className='signin-image'/>
@@ -40,8 +37,11 @@ const Signin = () => {
     </div>
 
        <div className="right-signin-pane" id='right-side'>
-         <Link to="/signup" className='sign-up-link'>New User? 
-            <em>Sign up now</em>
+         <Link to="/signup" className='sign-up-link'>
+              New User? 
+            <em>
+              Sign up now
+            </em>
          </Link>
           </div>
 
@@ -52,47 +52,69 @@ const Signin = () => {
                 <p>Lorem ipsum..</p>
               </div>
 
-      <form ref={form} onSubmit={sendEmail} className="form_signin">
+      <form className="form_signin" onSubmit={handleSubmit(onSubmit)}>
 
         <div className="user-label" id='user-textbox'>
-          <label className='signin-label'>Username / Email Address</label>
+          <label className='signin-label'>Email Address</label>
             <input className="user-input" 
                    type="text" 
-                   name="name"  
-                   required                 
+                   name="email"  
+                   {...register("email",{
+                    required: true,
+                    pattern: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/i,
+                  })}                
              />
                <MdEmail className='email_image'/>
+               <error id='error'>
+                    {errors.email?.type === "required" && "*Enter email address"}
+                </error>
           </div>
 
           <div className="user-label" id='password-textbox'>
-            <label className='signin-label'>Password</label>
+            <label className='password-label'>
+              Password
+            </label>
             <input className="user-input" 
                    type="password" 
-                   name="username"
-                   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
-                   title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" 
-                   required
+                   name="newPassword"
+                   {...register("newPassword", {
+                    required: true,
+                    minLength: 5,
+                    maxLength: 20,
+                  })}
              />
-
-                <RiLockPasswordFill className='password_image'/>
+              <RiLockPasswordFill className='password_image'/>
+              <error id='new'>
+                {errors.newPassword?.type === "required" && "*Enter your password"}
+              </error>
           </div>
           
             <button className='eye' onClick={toggleBtn}>
-                {state ? <AiOutlineEyeInvisible/> :
-                     <AiOutlineEye/>
+                {state ? <AiFillEyeInvisible/> :
+                     <AiFillEye/>
                 }
             </button>
 
-            <h3 id= 'remember'> Remember me </h3>
+            <div className="bottom">
+            <h3 id= 'remember'>
+              Remember me 
+            </h3>
             <input type="checkbox" id='bottom-links-checkbox'/>
 
             <div className="bottom-links">                   
-              <Link to="/reset" className='forgotten'>Forgotten Password?</Link>
+              <Link to="/reset" className='forgotten'>
+                Forgotten Password?
+              </Link>
+            </div>
             </div>
 
-            <button className="signin_btn" id='signin-submit-btn'>
-              <Link to="/home" className='signin-btn-text'>Sign In</Link>
-            </button>
+            <div> 
+            <input 
+            Link to="/home"
+            className="button-signin" 
+            type="submit" 
+            />
+            </div> 
           
         </form> 
     </div>
@@ -100,4 +122,4 @@ const Signin = () => {
   )
 }
 
-export default Signin
+export default Signin;

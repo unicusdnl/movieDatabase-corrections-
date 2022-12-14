@@ -16,25 +16,21 @@ const Footer = () => {
       </div>
 
     <ul className='footer-permalinks'>
-     <li><Link to='/about' id='footer-menu'>About us</Link></li>
+    <li><h3 id='footer-header'>About us</h3></li>
      <li> <Link to='/about' id='footer-menu'>FAQ</Link></li>
      <li><Link to='/about' id='footer-menu'>Corporate Relation</Link></li>
      <li><Link to='/about' id='footer-menu'>Help Center</Link></li>
      </ul>
 
      <ul className='footer-mid-links'>
-     <li><Link to='/about' id='footer-menu'>About us</Link></li>
+     <li><h3 id='footer-header'>Contact us</h3></li>
      <li> <Link to='/about' id='footer-menu'>FAQ</Link></li>
      <li><Link to='/about' id='footer-menu'>Corporate Relation</Link></li>
      <li><Link to='/about' id='footer-menu'>Help Center</Link></li>
      </ul>
 
-     <ul className='footer-right-links'>
-     <li><Link to='/about' id='footer-menu'>About us</Link></li>
-     <li> <Link to='/about' id='footer-menu'>FAQ</Link></li>
-     </ul>
-
-    <div className="subscribe-box">
+     <h3 className="txt">Subscribe to Newsletter</h3>
+      <div className="subscribe-box">    
       <input type="email" placeholder="Enter your email..."/>
       <RiSendPlaneFill id='send-subscribe'/>
     </div>
