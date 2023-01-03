@@ -20,12 +20,25 @@ function Signin () {
     console.log(data);
   };
 
-  const [state, setstate]= useState (false)
+  // const [state, setState]= useState(false);
 
-  const toggleBtn = () => {
-    
-    setstate(prevState =>! prevState);
-  };
+  // const toggleBtn = () => {
+  //   setState(prevState => !prevState);
+  // };
+
+  const [type, setType] = useState('password');
+  const [icon, setIcon] = useState(AiFillEyeInvisible)
+
+  const handleToggle = () => {
+    if(type==='password'){
+      setIcon(AiFillEye);
+      setType('text');
+    }
+    else{
+      setIcon(AiFillEyeInvisible);
+      setType('password')
+    }
+  }
 
   return (
     <section id='signin'>
@@ -39,25 +52,23 @@ function Signin () {
        <div className="right-signin-pane" id='right-side'>
          <Link to="/signup" className='sign-up-link'>
               New User? 
-            <em>
-              Sign up now
-            </em>
+            <em>Sign up now</em>
          </Link>
           </div>
 
           <div className="signin-left-column" id='login-images'>
-              <img src={asset} alt='signin-left-pane' className='left-column-img' />
+            <img src={asset} alt='signin-left-pane' className='left-column-img' />
               <div className="signin-content">
                 <h1>Come in and see all the new movies...</h1>
                 <p>Lorem ipsum..</p>
               </div>
 
-      <form className="form_signin" onSubmit={handleSubmit(onSubmit)}>
+      <form className="form_signin" onSubmit={handleSubmit(onSubmit)} noValidate autoComplete="off">
 
         <div className="user-label" id='user-textbox'>
           <label className='signin-label'>Email Address</label>
             <input className="user-input" 
-                   type="text" 
+                   type="email" 
                    name="email"  
                    {...register("email",{
                     required: true,
@@ -74,8 +85,9 @@ function Signin () {
             <label className='password-label'>
               Password
             </label>
+
             <input className="user-input" 
-                   type="password" 
+                   type= {type}
                    name="newPassword"
                    {...register("newPassword", {
                     required: true,
@@ -84,22 +96,22 @@ function Signin () {
                   })}
              />
               <RiLockPasswordFill className='password_image'/>
+              <span id="pwd_eye" onClick={handleToggle}><AiFillEye icon={icon} size={18}/></span>
+
+              {/* <button className='eye' onClick={toggleBtn}>
+                {state ? <AiFillEye />:<AiFillEyeInvisible/>}
+              </button> */}
+
               <error id='new'>
                 {errors.newPassword?.type === "required" && "*Enter your password"}
               </error>
           </div>
           
-            <button className='eye' onClick={toggleBtn}>
-                {state ? <AiFillEyeInvisible/> :
-                     <AiFillEye/>
-                }
-            </button>
-
-            <div className="bottom">
+          <div className="bottom">
             <h3 id= 'remember'>
               Remember me 
             </h3>
-            <input type="checkbox" id='bottom-links-checkbox'/>
+           <input type="checkbox" id='bottom-links-checkbox'/>
 
             <div className="bottom-links">                   
               <Link to="/reset" className='forgotten'>

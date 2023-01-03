@@ -1,6 +1,8 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Link } from 'react-router-dom';
 import './reset.css'
+import Resetpassword from './resetpassword';
+import {MdEmail} from 'react-icons/md';
 import logo from '../../images/logo.svg'
 import Footer from '../footer/footer'
 import resetImage from '../../images/resetImage.jpg'
@@ -16,6 +18,17 @@ function Reset () {
   const  onSubmit = (data) => {
     console.log(data);
   };
+
+  //  const [isState, setIsState] = useState(false)
+
+  //  {isState && <Resetpassword/>}
+
+  //  onClick=.
+  //  {() => setIsState(!isState)}
+  
+  //  const handleClick = event => {
+    
+  //   setIsState(current => !current);
 
   return (
     <section id= 'reset'>
@@ -36,7 +49,7 @@ function Reset () {
             </div>
           </div>
 
-      <form className='reset-form' onSubmit={handleSubmit(onSubmit)}>
+      <form className='resetForm' onClick={handleSubmit(onSubmit)}>
       <div className="user-label" id='user-textbox'>
           <label className='signin-label'>Email Address</label>
             <input className="user-input" 
@@ -46,21 +59,29 @@ function Reset () {
                     required: true,
                     pattern: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/i,
                     })} />
-                   <error id='reset-error'>
+                   <error id='resetError'>
                       {errors.email?.type === "required" && "*Email is required"}
                    </error>
+                   <MdEmail id='resetEmail'/>
           </div>
 
-            <button className="reset-btn" id='reset-submit-btn'>
+            <button className="reset-btn" id='reset-submit-btn' >
               <Link to="/reset" className='reset-btn-text'>
                 Next
               </Link>
             </button>
-      </form>
+           
+          {/* {isState && <resetForm/>}  */}
 
+          
+      </form>
       <Footer/>
     </section>
   )
 }
 
+
 export default Reset
+
+
+

@@ -1,11 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
+* {
     box-sizing: border-box;
-    outline: none;
-    font-family: Poppins;
+
 }
 
 #subscription{
@@ -19,13 +16,11 @@
     flex-wrap: wrap;
     width: 100%;
     padding: 2rem;
-    
 }
 
 #subscription > #Nav{
     position: fixed;
-    margin: -6rem 0 0 0;
-    
+    margin: -6rem 0 0 0; 
 }
 
  #plan{
@@ -33,7 +28,7 @@
     font-weight: 700;
     display: flex;
     justify-content: center;
-    margin: 9.5rem 0 0 20rem ;
+    margin: 9.5rem 0 0 25rem ;
     color: var(--header-color);
 }
 
@@ -43,7 +38,7 @@
     width: 82%;
     height: 50vh;
     background: linear-gradient(to right, rgba(159,79,107,100), rgba(182,77,94,100));
-    margin: -1.5rem 5rem 0 5rem;
+    margin: -1.5rem 5rem 0 3rem;
     z-index: -1;
 }
 
@@ -133,7 +128,7 @@
     color: var(--color-secondary);
 }
 
-#subscription > #Footer {
+#Footer {
     width: 100%;
     
 }

@@ -12,7 +12,7 @@
     display: flex;
     flex-flow: row wrap;
     margin-top: 50rem;
-    height: 55vh;
+    height: 50vh;
     color: var(--header-color);
     background: linear-gradient(to right, rgba(159, 79, 107, 100), rgba(182, 77, 94, 100));
     width: 100%;
@@ -20,16 +20,16 @@
 
 .footer_logo img {
     margin-top: 7rem;
-    margin-left: 1.5rem;
-    height: 25%;
-    width: 25%;
+    margin-left: 5rem;
+    height: 30%;
+    width: 30%;
 }
 
 .footer-socials {
     display: flex;
-    gap: 0.1rem;
-    margin-left: 72.5rem;
-    margin-top: -1.5rem;
+    gap: 0.5rem;
+    margin-left: 62.5rem;
+    margin-top: -4.3rem;
     font-size: 1.5rem;
 }
 
@@ -46,15 +46,10 @@ em {
     color: var(--color-bg);
 }
 
-.footer-socials {
-    margin-left: 63rem;
-    margin-top: -4.5rem;
-}
-
 .subscribe-box input {
     border-radius: 0.5rem;
     height: 6vh;
-    width: 18%;
+    width: 20%;
     background: var(--color-bg);
     text-indent: 1rem;
     margin-left: 65rem;
@@ -69,8 +64,8 @@ em {
 
 #send-subscribe {
     color: var(--color-dark);
-    margin-left: 81rem;
-    margin-top: -7.2rem;
+    margin-left: 83rem;
+    margin-top: -7rem;
 }
 
 .subscribe-box {
@@ -83,9 +78,9 @@ em {
     flex-direction: column;
     justify-content: center;
     gap: 0.2rem;
-    margin-left: 24rem;
-    margin-top: -8rem;
-    font-weight: 300;
+    margin-left: 28rem;
+    margin-top: -7rem;
+    font-weight: 400;
 }
 
 .footer-mid-links {
@@ -93,8 +88,13 @@ em {
     flex-direction: column;
     justify-content: center;
     gap: 0.2rem;
-    margin: -11.5rem 0 0 43rem;
-    font-weight: 300;
+    margin: -11rem 0 0 47rem;
+    font-weight: 400;
+}
+
+.footerRight{
+    margin-left: 8rem;
+    margin-top: -2.8rem;
 }
 
 #footer-menu {
@@ -107,7 +107,7 @@ em {
     font-weight: 700;
     margin-top: 4.5rem;
     font-size: 1rem;
-    margin-left: 27rem;
+    margin-left: 23rem;
     font-weight: 600;
 }
 
@@ -115,12 +115,14 @@ em {
     font-size: 1.1rem;
     margin-left: 62.5rem;
     margin-top: -10rem;
-    font-weight: 600;
+    font-weight: 700;
+    color: var();
 }
 
 #footer-header{
-    font-weight: 600;
-    font-size: 1.1rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-left: 1rem;
 }
 
 

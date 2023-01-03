@@ -1,27 +1,26 @@
-import React from 'react'
+import React, { Component } from 'react'
 import './headers.css'
 
-const Headers = () => {
-  return (
-    <section id='headers'>
+class Header extends Component {
+  state = { 
+    whatsPopular: [ "Streaming", "On TV", "For Rent", "In Theatres" ],
+    FreeToWatch: [ "Movies", "TV"],
+    latestTrailesrs: ["Streaming", "On TV", "For Rent", "In Theatres" ],
+    trending: ["Today", "This Week"]
+   } 
 
-      <div className="headings-column">
-       
-            <ul className='headings-list'>
-              <li>Recently Added</li>
-              <li id='headings-li'>Streaming Now</li>
-              <li id='headings-li'>ON TV</li>
-            </ul>
+  render() { 
 
-            <ul className='headings-list'>
-              <li>Popular</li>
-              <li id='headings-li'>Series</li>
-              <li id='headings-li'>Uploads</li>
-            </ul>
-  
-        </div>
-    </section>
-  )
+    return (
+      <section id='header'>
+        <header className='headerListing' id='header-menu'>
+          <li className='headerList'>What's Popular
+          <ul id='tabs'>{this.state.whatsPopular.map(whatsPopular => <li>{whatsPopular}</li>)}</ul>
+          </li>
+        </header>
+      </section>
+    );
+  }
 }
-
-export default Headers
+ 
+export default Header;

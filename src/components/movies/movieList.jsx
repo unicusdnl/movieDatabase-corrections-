@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import MovieCard from "./movieCard";
 import axios from "axios";
 
@@ -12,7 +12,7 @@ const MovieList = () => {
         }).catch(err=>{console.log(err)})
     }, [])
 
-    return <div className= "container-md w-75 h-100">
+    return <div className= "container-md w-75">
         <div className="row g-2">
         {movies.map ((movie, index) =>{
             return <div className="col-md-2">            

@@ -6,9 +6,7 @@ import {BsFillBellFill} from 'react-icons/bs'
 
 class Nav extends Component{
   state={
-    menuItems: ["Action", "Romance", "Sci-Fi"],
-    moreMenu: ["Uploads", "Downloads", "Settings"],
-    avatarMenu: ["Change User", "Logout", "Language"]
+    menuItems: ["Action", "Romance", "Sci-Fi"]
   };
   
 render() {
@@ -23,22 +21,33 @@ render() {
       <nav className='nav' id='nav-menu'>
         <li className='nav-list'>Home</li>
         <li className='nav-list'>Movies 
-        <ul className='nav-item-drop'>{this.state.menuItems.map(menuItems => <li>{menuItems}</li>)}</ul>
+        <ul className='nav-item-drop'>{this.state.menuItems.map(menuItems => <li>{menuItems}</li>)}
+          {/* <li>Action</li>
+          <li>Romance</li>
+          <li>Sci-Fi</li>
+          <li>Series</li> */}
+        </ul>
         </li>         
         <li className='nav-list'>More
-        <ul className='nav-item-drop'>{this.state.moreMenu.map(moreMenu => <li>{moreMenu}</li>)}</ul>
+        <ul className='nav-item-drop'>
+            <li>Uploads</li>
+            <li>Downloads</li>
+            <li>Settings</li>
+        </ul>
         </li>      
       </nav>
 
-      <div className="avatar" >   
+      <div className="avatar" >     
         <HiOutlineSearch id='right-search'/>
         <BsFillBellFill id='right-avatar'/>
         
         <li id='avatar-shape'>
         <HiUserCircle id='right-avatar'/>
-        <ul className='nav-item-drop'>{this.state.avatarMenu.map(avatarMenu => <li>{avatarMenu}</li>)}</ul>
+        <ul className='nav-item-drop'>
+            <li>Logout</li>
+            <li>Change User</li>
+        </ul>
         </li>
-        
         </div>
       </div> 
   
