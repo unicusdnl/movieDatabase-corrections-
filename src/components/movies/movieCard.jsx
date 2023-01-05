@@ -11,7 +11,7 @@ const MovieCard = ({poster_path, name, vote_average})  => {
   return (
     <section id='movieCard'>
       <div className="container">
-        <img src={getPosterURL(poster_path)} alt={name} />
+        <img src={getPosterURL(poster_path)} alt={name}/>
        <p className="ratings">{vote_average}</p> 
     </div>
     </section>
