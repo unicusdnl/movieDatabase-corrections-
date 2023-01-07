@@ -9,7 +9,7 @@ const subscription = () => {
     <div className='leftSubscribe'>
     <div className="col1">
     <img src={logo} alt="background" id='subLogo' />
-    <img src={Left} alt="background-img" id='Left' />
+    <img src={Left} alt="background-img" id='leftImg' />
     <ul>
       <li><BsCheck2 id='check'/>Unlimited Movies and Shows</li>
       <li><BsCheck2 id='check'/>Watch anywhere. Cancel anytime</li>
@@ -28,7 +28,7 @@ const subscription = () => {
 
           <label className='subLabel'>
             <input type="radio" name='plans' id='free' />
-            <span id='subSpan'>₵15<small>/month</small></span> NO LIMITS
+            <span id='subSpan'><sup>₵</sup>15<small>/month</small></span> NO LIMITS
           </label>
           <br/>
           <p id='subText'>FULLNAME</p>
