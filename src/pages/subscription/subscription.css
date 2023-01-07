@@ -96,6 +96,7 @@
     font-size: 12px;
     cursor: pointer;
     color: var(--color-dark);
+    border-radius: 8px;
 }
 
 .subLabel span{
@@ -128,7 +129,7 @@
     background: linear-gradient(to right, rgba(159,79,107,100), rgba(182,77,94,100));
     padding: 0.5rem 1rem;
     color: var(--header-color);
-    border-radius: 5px;
+    border-radius: 3px;
     width: 10rem;
     height: 3rem;
     transition: outline 200ms;
