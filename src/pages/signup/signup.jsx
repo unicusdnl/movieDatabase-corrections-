@@ -41,7 +41,7 @@ function Signup () {
     <section id= 'signup'>
         <div className="logo-signup">
           <img src={logo} alt="logo"/>
-           <h3 id='header'>Create Account!</h3> 
+           <h3 id='createAccount'>Create Account!</h3> 
         </div>
       
         <div className="signup-link" id='signin-link'>

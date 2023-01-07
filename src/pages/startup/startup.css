@@ -10,7 +10,7 @@
     display: flex;
     flex-flow: row nowrap;
     background: linear-gradient(to right, rgba(159,79,107,100), rgba(182,77,94,100));
-    margin-top: 0px;
+    margin-top: 0;
     height: 100vh;
     color: var(--color-bg);
 }
@@ -32,22 +32,21 @@
 .logo img {
     width: 100px;
     height: 100px;
-    margin-top: -1.5rem;
+    margin-top: -2.5rem;
 }
 
 .logo h3 {
     font-size: 45px;
-    font-weight: 900;
+    font-weight: 800;
     color: var(--header-color);
-    margin-top: 1.5rem;
+    margin-top: 0.5rem;
 }
 
 .links-container {
-    margin-top: 4rem;
+    margin-top: 2.5rem;
 }
 
-.custom-btn {
-    
+.custom-btn {    
     background-color: var(--header-color);
     padding: 0.5rem 1rem;
     border-radius: 100px;

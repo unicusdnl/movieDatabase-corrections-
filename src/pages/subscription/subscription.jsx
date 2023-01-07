@@ -1,173 +1,46 @@
-import React from 'react' 
+import React from 'react'
+import logo from '../../images/logo.svg'
 import './subscription.css'
-import {BsCheck2} from 'react-icons/bs'
-import {MdClose} from 'react-icons/md'
-import Footer from '../footer/footer'
-import Nav from '../../components/nav/nav'
+import Left from '../../images/left.png'
+import {BsCheck2, BsBookmarkStarFill} from 'react-icons/bs'
 
-const Subscription = () => {
+const subscription = () => {
   return (
-    <section id='subscription'>
+    <div className='leftSubscribe'>
+    <div className="col1">
+    <img src={logo} alt="background" id='subLogo' />
+    <img src={Left} alt="background-img" id='Left' />
+    <ul>
+      <li><BsCheck2 id='check'/>Unlimited Movies and Shows</li>
+      <li><BsCheck2 id='check'/>Watch anywhere. Cancel anytime</li>
+      <li><BsCheck2 id='check'/>Watch on any device at anytime</li>
+      <li><BsCheck2 id='check'/>Download all your favorites and watch over again</li>
+    </ul>
+    </div>
+    <div className="col2">
+        <h3><BsBookmarkStarFill id='icon'/>Choose your Plan</h3>
 
-      <Nav />
-        <div className="sub-ctr">
-            <h3 id='plan'>Choose the plan thats right for you</h3>
-        </div>
+        <form className='subForm'>
+          <label className='subLabel'>
+            <input type="radio" name='plans' id='free' />
+            <span id='subSpan'>FREE</span> ONE MONTH
+          </label>
 
-        <div className="card-wrapper">
+          <label className='subLabel'>
+            <input type="radio" name='plans' id='free' />
+            <span id='subSpan'>₵15<small>/month</small></span> NO LIMITS
+          </label>
+          <br/>
+          <p id='subText'>FULLNAME</p>
+          <input id='subName' type="text" placeholder='Enter Your Name' />
+          <p id='subText'>EMAIL ADDRESS</p>
+          <input id='subName' type="text" placeholder='Enter your email address'/>
+          <button id="subBtn" type='submit'>Subscribe</button>
           
-          <div className="card-header">
-          <h2>STARTER</h2>
-          </div>
-
-          <div className="card-details">
-            <p>
-              <span>
-                <BsCheck2 id='check'/>
-                <b>1</b> full user
-                </span>
-              </p>
-              <p>
-              <span>
-                <BsCheck2 id='check'/>
-                <b>2</b> contact per client
-                </span>
-              </p>
-              <p>
-              <span>
-                <MdClose id='nocheck'/>
-                <b>No</b> Lorem ipsum dolor
-                </span>
-              </p>
-              <p>
-              <span>
-                <MdClose id='nocheck'/>
-                <b>No</b> Lorem ipsum dolor
-                </span>
-              </p>
-          </div>
-
-          <div className="card-price">
-            <p>
-              <sup>
-                ₵
-                </sup>
-                10.99
-                <sub>
-                  /month
-                </sub>
-                </p>
-          </div>
-        
-          <button className='card-button'>
-            SELECT
-          </button>
-        </div>
-
-        <div className="card-wrapper">
-          
-          <div className="card-header">
-          <h2>PRIVILEDGE</h2>
-          </div>
-
-          <div className="card-details">
-            <p>
-              <span>
-                <BsCheck2 id='check'/>
-                <b>5</b> users
-                </span>
-              </p>
-              <p>
-              <span>
-                <BsCheck2 id='check'/>
-                <b>2</b> contact per client
-                </span>
-              </p>
-              <p>
-              <span>
-                <BsCheck2 id='check'/>
-                <b>4</b> Lorem ipsum dolor
-                </span>
-              </p>
-              <p>
-              <span>
-                <MdClose id='nocheck'/>
-                <b>No</b> Lorem ipsum dolor
-                </span>
-              </p>
-          </div>
-
-          <div className="card-price">
-            <p>
-              <sup>
-                ₵
-                </sup>
-                15.99
-                <sub>
-                  /month
-                </sub>
-                </p>
-          </div>
-          
-          <button className='card-button'>
-            SELECT
-          </button>
-        </div>
-
-        <div className="card-wrapper">
-
-        <div className="card-header">
-          <h2>MASTER</h2>
-          </div>
-
-          <div className="card-details">
-            <p>
-              <span>
-                <BsCheck2 id='check'/>
-                <b>5</b> users
-                </span>
-              </p>
-              <p>
-              <span>
-                <BsCheck2 id='check'/>
-                <b>2</b> contact per client
-                </span>
-              </p>
-              <p>
-              <span>
-                <BsCheck2 id='check'/>
-                <b>All</b> Lorem ipsum dolor
-                </span>
-              </p>
-              <p>
-              <span>
-                <BsCheck2 id='check'/>
-                <b>All</b> Lorem ipsum dolor
-                </span>
-              </p>
-          </div>
-
-          <div className="card-price">
-            <p>
-              <sup>
-                ₵
-                </sup>
-                18.99
-                <sub>
-                  /month
-                </sub>
-                </p>
-          </div>
-          
-          <button className='card-button'>
-            SELECT
-          </button>
-          </div>
-          
-          <Footer/> 
-          
-    </section>
+        </form>
+    </div>
+  </div>
   )
 }
 
-export default Subscription
+export default subscription

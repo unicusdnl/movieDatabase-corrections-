@@ -8,15 +8,14 @@ const getPosterURL = (posterpath) => {
 }
 
 const MovieCard = ({poster_path, name, vote_average})  => {
-  return (
-    <section id='movieCard'>
-      <div className="container">
-        <img src={getPosterURL(poster_path)} alt={name}/>
+  return <div className="container">
+       <img src={getPosterURL(poster_path)} alt={name}/>
+       <h3 className= 'text-md-left gap-5 '>{name}</h3>
        <p className="ratings">{vote_average}</p> 
     </div>
-    </section>
 
-  )
+
+  
 }
 
 export default MovieCard

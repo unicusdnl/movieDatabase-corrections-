@@ -33,7 +33,7 @@
 }
 
 .nav{
-  position: fixed;
+  position: absolute;
   width: 100vw;
   box-shadow: 0 0 10px var(--clr-gray300);
 }
@@ -118,7 +118,7 @@ li{
 .avatar{
     display: flex;
     gap: 1rem;   
-    margin: -2.5rem 0 0 85rem;
+    margin: -2.5rem 0 0 75rem;
     z-index: 1;
 }
 

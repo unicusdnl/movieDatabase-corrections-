@@ -9,6 +9,10 @@ const MovieHeader = () => {
                 <p>Title</p>
                 <p><small>Some representative placeholder content for the first slide<br/>Some representative placeholder content for the first slide</small></p>
             </div>
+
+            <div className="play">
+                
+            </div>
         </div>
     </section>
   )

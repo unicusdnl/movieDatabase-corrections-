@@ -16,38 +16,37 @@
 .logo-signin img{
     height: 70px;
     width: 70px;   
-    margin: -10rem 0 0 10rem;
+    margin: -9rem 0 0 11rem;
 }
 
 .form_signin{
-    margin: -27rem 0 0 53rem;  
-    
+    margin: -25.5rem 0 0 46.5rem;  
 }
 
-#signin-header{
-    margin: 0.2rem 0 0 77rem;
+.logo-signin > h1{
+    margin: 0.5rem 0 0 70rem;
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: 700;
     color: var(--color-bg-variant);
 }
 
 .form_signin:before{
     content:" ";
     display: block;
-    height: 36rem;
+    height: 33.5rem;
     width: 27rem;
     position: absolute;
-    top: 8%;
-    left: 71%;
+    top: 6.2%;
+    left: 70%;
     background: var(--header-background);
     z-index: -1;
     opacity: 1;
 }
 
-.logo-signin > .signin-image{
+.logo-signin  .signin-image{
     color: var(--color-bg-variant);
-    margin: 6rem 0 0 64rem;
-    font-size: 1.4rem;
+    margin: 6rem 0 0 56rem;
+    font-size: 1.2rem;
 }
 
 .right-signin-pane > .sign-up-link{
@@ -55,10 +54,11 @@
     text-decoration: none;
     color: var(--color-dark);
     z-index: 1;
+    margin-left: -7rem;
 }
 
 .right-signin-pane{
-    margin: -11rem 0 0 81rem;
+    margin: -11rem 0 0 80rem;
 }
 
 .sign-up-link > em{
@@ -96,7 +96,7 @@ em:hover{
 }
 
 .user-input {   
-    border-radius: 40px;
+    border-radius: 8px;
     width: var(--button);
     height: 2.5rem;
     text-indent: 12%;
@@ -142,7 +142,7 @@ em:hover{
 }
 
 #remember{
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-weight: 500;
     margin-top: -7.5rem;
     margin-left: 7rem;
@@ -151,7 +151,7 @@ em:hover{
 }
 
 .bottom{
-    margin-top: 4.5rem;
+    margin-top: 5rem;
 }
 
 #bottom-links-checkbox{
@@ -160,16 +160,17 @@ em:hover{
 }
 
 .bottom-links{
-    margin-top: -1.9rem;
+    margin-top: -1.5rem;
     margin-left: 11rem;
     font-weight: 500;
 }
 
 .bottom-links > .forgotten{
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 0.85rem;
     color: var(--color-bg-variant);
-    margin-left: 5rem;
+    margin-left: 6rem;
+    
 }
 
 em{
@@ -200,6 +201,7 @@ em{
     height: 100%;
     width: 57.5%;
     margin: -23rem 0 0 -1.5rem;
+    z-index: -1;
   }
 
   .signin-content h1{
@@ -219,11 +221,11 @@ em{
     border: 0;
     font-weight: 400;
     text-align: center;
-    border-radius: 30px;
-    width: 19.5rem;
+    border-radius: 8px;
+    width: var(--button);
     height: 2.8rem;
     transition: outline 200ms;
-    margin-top: 6rem;
+    margin-top: 4.8rem;
     margin-left: 5.5rem;
   }
 

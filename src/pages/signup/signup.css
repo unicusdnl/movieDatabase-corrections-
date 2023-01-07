@@ -18,21 +18,21 @@
     margin: -3.7rem 0 0 10rem;
 }
 
-#header{
-    margin: 5rem 0 0 74rem;
-    font-size: 1.3rem;
+#createAccount{
+    margin: 4rem 0 0 69rem;
+    font-size: 1.2rem;
     font-weight: 700;
     color: var(--color-bg-variant);
-    border: 0;
+    z-index: -1;
 }
 
 .signup-form:before{
     content:" ";
     display: block;
-    height: 37rem;
+    height: 34.7rem;
     width: 27rem;
     position: absolute;
-    top: 13%;
+    top: 12.2%;
     left: 62%;
     background: var(--header-background);
     z-index: -1;
@@ -41,7 +41,7 @@
 }
 
 .signup-form{
-    margin: -30rem 0 0 8.5rem;  
+    margin: -27.5rem 0 0 1.7rem;  
 }
 
 .user-signup-label{
@@ -69,7 +69,7 @@
     margin-top: 0.5rem;
     margin-bottom: 0.7rem;
     height: 10%;
-    border-radius: 30px;
+    border-radius: 8px;
     text-indent: 5%;
     width: var(--button);
     height: 2.5rem;
@@ -77,22 +77,22 @@
 }
 
 #password-textbox > .signup-input{
-    width: 20rem;
+    width: var(--button);
     margin-left: 55.5rem;
     margin-top: 0.2rem;
-    border-radius: 30px;
+    border-radius: 8px;
 }
 
 #confirm-password-textbox > .signup-input{
     margin-left: 61rem;
     margin-top: -1.7rem;
     margin-bottom: -10rem;
-    border-radius: 30px;
-    width: 20rem;
+    border-radius: 8px;
+    width: var(--button);
 }
 
 .signup-link{
-    margin: -10rem 0 0 88rem;
+    margin: -9.5rem 0 0 82rem;
     font-size: 1.2rem;
 }
 
@@ -128,7 +128,7 @@
 
 .column .content{
     position: absolute;
-    bottom: 6.2rem;
+    bottom: 4.5rem;
     background: var(--color-bg-variant);
     background: var(--color-dark, 0.5); 
     width: 50%;
@@ -154,8 +154,8 @@
     border: 0;
     font-weight: 400;
     text-align: center;
-    border-radius: 30px;
-    width: 19.5rem;
+    border-radius: 8px;
+    width: var(--button);
     height: 2.8rem;
     transition: outline 200ms;
     margin-top: 10rem;

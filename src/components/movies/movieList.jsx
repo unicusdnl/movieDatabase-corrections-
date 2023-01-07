@@ -17,15 +17,14 @@ const MovieList = () => {
         }).catch(err=>{setMovies(err)})
     }, [])
 
-    return <div className= "container-md w-75">
-        <div className="row g-2">
+    return <div className= "d-flex flex-row bd-highlight mb-3 gap-5 offset-md-1 overflow-auto">
+       
         {movies.map ((movie, index) =>{
-            return <div className="col-md-2">            
-             <MovieCard key= {index} {...movie} />
-            </div>
+            return <MovieCard key= {index} {...movie} />
+           
         })}
     </div>
-    </div>
+  
 }
 
 export default MovieList;

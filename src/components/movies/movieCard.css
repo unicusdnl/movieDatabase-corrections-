@@ -8,14 +8,14 @@
 
 #movieCard{
     display: flex;
+    flex-direction: row;
     flex-wrap: nowrap;
-    border: none;
-    margin: -0.5rem 0 -18rem -2rem;
+    margin: -0.5rem 0 0 -2rem;
+    z-index: 1;
 }
 
 .ratings{
     display: flex;
-    flex-direction: row;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     margin-left: -3rem;
@@ -27,8 +27,8 @@
     justify-content: center;
     align-items: center;
     z-index: 1;
-    width: 18%;
-    height: 13%;
+    width: 50%;
+    height: 15%;
     box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
                 -6px -6px 10px -1px rgba(60, 60, 60, 0.7);
 }
@@ -36,6 +36,7 @@
 .container{
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     height: 18rem;
     width: 12rem;
     margin-left: -1.5rem;
@@ -45,6 +46,7 @@
 .container img{
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     height: 18rem;
     margin-left: 0;
     width: 12rem;

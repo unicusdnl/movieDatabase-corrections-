@@ -20,12 +20,6 @@ function Signin () {
     console.log(data);
   };
 
-  // const [state, setState]= useState(false);
-
-  // const toggleBtn = () => {
-  //   setState(prevState => !prevState);
-  // };
-
   const [type, setType] = useState('password');
   const [icon, setIcon] = useState(AiFillEyeInvisible)
 
