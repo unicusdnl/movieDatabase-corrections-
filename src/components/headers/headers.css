@@ -12,12 +12,13 @@
     border: none;
     background: transparent;
     margin-top: -10rem;
+    
 }
 
 .headerListing > .headerList{
     font-size: 1.5rem;
     font-weight: 700;  
-    margin-left: -67rem;
+    margin-left: 7rem;
     margin-top: 31.5rem;
     margin-bottom: -11rem;
 }

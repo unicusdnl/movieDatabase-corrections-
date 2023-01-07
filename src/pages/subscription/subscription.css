@@ -17,7 +17,7 @@
 #subLogo{
     width: 6rem;
     height: 6rem;
-    margin-top: 10rem;
+    margin-top: 7rem;
 }
 
 #leftImg{
@@ -45,8 +45,8 @@
 .col1 ul li{
     display: flex;
     align-items: center;
-    margin-top: -30rem;
-    margin-bottom: 29.5rem;
+    margin-top: -29rem;
+    margin-bottom: 28.5rem;
     font-size: 0.8rem;
     gap: 1px;
 }
@@ -67,7 +67,7 @@
     font-family: Poppins;
     font-size: 1.4rem;
     font-weight: 700;
-    margin-top: -18rem;
+    margin-top: -12rem;
     margin-left: 0.1rem;
 }
 
