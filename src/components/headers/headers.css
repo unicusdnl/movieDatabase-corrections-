@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#header{
+    display: flex;
+    flex-direction: row-wrap;
+    border: none;
+    background: transparent;
+    margin-top: -10rem;
+    
+}
+
+.headerListing > .headerList{
+    font-size: 1.5rem;
+    font-weight: 700;  
+    margin-left: 7rem;
+    margin-top: 31.5rem;
+    margin-bottom: -11rem;
+}
+
+.headerList ul{
+    list-style: none;
+    font-size: .9rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.headerListing li{
+    position: relative;
+    display: flex;
+    row-gap: 2px;
+}
+
+.headerList ul{
+    display: flex;
+    flex-direction: row;
+    border: 2.5px solid var(--color-bg-variant);
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 0.1rem;
+    margin-top: -0.1rem;
+    margin-left: 1rem;
+}
+
+#tabs > li {
+    list-style: none;
+    padding: 0.5rem 0.4rem;
+    border-radius: 30px;
+    transition: background-color 200ms ease-in-out;
+    margin-left: 0.1rem;
+} 
+
+#tabs{
+  list-style: none;
+  font-weight: 700;
+  position: relative;
+  cursor: pointer;
+  border-radius: 30px;
+  align-items: center;
+  padding: 0.1rem 0.2rem;
+}
+
+#tabs li:active{
+    display: flex;
+    flex-direction: row;
+    background: var(--color-bg-variant);
+    border-radius: 30px;
+    padding: 1rem;
+    color: var(--header-color);
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    transition: 200ms ease-in-out;
+    gap: 0.5rem;
+}
+
+
+
+
+
+

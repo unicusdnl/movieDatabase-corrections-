@@ -1,74 +1,154 @@
-.reset_container{
-    display: flex;
-    background: transparent;
-    transition: var(--transition);
-    padding: 1.2rem;
-    align-items: center;
-    border-radius: 0.5rem;
-    width: 30%;
-    margin-left: 35rem;
-    margin-top: 16rem;
-    height: 40vh;
-    place-items: center;
-    align-items: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
 }
 
-.logo_reset{
-    display: flex;
-    width: 5rem;
-    margin-left: -32rem;
-    margin-top: -43rem;
+#reset {
+    --button-width: 280px;
+    --button-img: 100px;
+    --textbox-width: 100rem;
+    --button: 20rem;
+    
 }
 
-.email_address{
-    margin-top: -25rem;
-    margin-left: 48rem;
+.reset_container img{
+    height: 70px;
+    width: 70px;   
+    margin: -11rem 0 0 10rem;
+    z-index: 1;
 }
 
-.address_label{
+#reset_header{
+    margin: 10rem 0 0 69rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-bg-variant);
+}
+
+.resetForm{
+    margin: -22rem 0 0 57.5rem;  
+}
+
+.resetPass{
+  display: none;
+  margin: -18rem 0 0 57.5rem;
+}
+
+.reset-note {
+    margin-left: 63.5rem ;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 300;
+    justify-content: center;
+  }
+
+
+.resetForm:before{
+    content:" ";
+    display: block;
+    height: 32rem;
+    width: 27rem;
+    position: absolute;
+    top: 15%;
+    left: 62%;
+    background: var(--header-background);
+    z-index: -1;
+    opacity: 1;
+}
+
+.reset-image{
+    margin-left: 10rem;
+    margin-top: 12rem;
+    z-index: -1;
+}
+
+.reset-image .reset-content{
+    position: absolute;
+    bottom: 6rem;
+    background: var(--color-bg-variant);
+    background: var(--color-dark, 0.5); 
+    width: 50%;
+    padding: 20px;
     color: var(--header-color);
-    margin-left: -68rem;
+    font-family: Poppins;
+   
+  }
+
+  .reset-image > .reset-image-column{
+    height: 100%;
+    width: 50%;
+    margin: -23rem 0 0 0;
+  }
+
+  .reset-content h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .reset-content p{
+    font-size: 1.2rem;
     font-weight: 400;
-    font-size: 10px;
-    margin-top: -38rem;
+  }
+
+  .reset-btn{
+        background: linear-gradient(to right, rgba(159,79,107,100), rgba(182,77,94,100));
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        width: var(--button);
+        height: 3rem;
+        transition: outline 200ms;
+        margin-top: 10.5rem;
+        margin-left: 5.5rem;
+        border-radius: 8px;
+        cursor: pointer ;
+  }
+
+  #reset-submit-btn{
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    color: #ffff; 
+    text-decoration: none;  
+    font-size: 1rem;
+    font-weight: 500;
 }
 
-.address_input{
-    width: 20rem;
-    margin-left: -9rem;
-    margin-top: 10rem;
-    height: 7vh;
-    border-radius: 0.5rem;
-    border: 1.5px solid;
-    background-color: transparent;
-    color: var(--header-color);
+#pwd-submit-btn > .reset-btn-text{
+  text-decoration: none;
+  color: #ffff;
 }
 
-.reset_btn{
-    display: inline-block;
-    background: #c06767;
-    transition: var(--transition);
-    border-radius: 0.6rem;
-    width: 20.5rem;
-    height: 8vh;
-    margin-left: -73rem;
-    margin-top: -4rem;
-    align-items: center;
-    font-weight: 600;
-    font-size: 16px;
-    text-decoration: none;
+#Footer{
+  margin-top: 9rem;
 }
 
-.reset_header{
-    color: var(--header-color);
-    font-weight: 600;
-    margin-left: 43rem;
-    margin-top: -20rem;
-    font-size: 18px;
+#resetError{
+  color: #ff6774;
+  margin-left: 6rem;
+  margin-top: 0.5rem;
+  margin-bottom: -2rem;
+  font-size: 0.7rem; 
+  z-index: 1;  
 }
 
-.box{
-    color: var(--header-color);
-    margin-top: -34rem;
-    margin-left: 23rem;
+#Resetpassword{
+  margin: 20rem;
 }
+
+#resetEmail{
+  margin-left: 6.4rem;
+  margin-top: -1.8rem;
+  color: var(--color-dark);
+}
+
+
+
+
+
+
+
+
+
+
+

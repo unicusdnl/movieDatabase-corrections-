@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?famil=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 * {
     box-sizing: border-box;
@@ -8,124 +8,185 @@
     --button-width: 280px;
     --button-img: 100px;
     --textbox-width: 100rem;
-
-    display: flex;
-    flex-flow: row wrap;
-    margin-top: 0px;
-    margin-left: 50rem;
-    height: 100vh;
-    color: var(--header-color);
+    --button:20rem;
+    
 }
 
 .logo-signup img{
-    margin-left: -45rem;
     height: 70px;
-    width: 70px;
+    width: 70px;   
+    margin: -3.7rem 0 0 10rem;
 }
 
-#header{
-    margin-left: -6rem;
-    font-weight: 600;
-    font-size: 1.3rem;
+#createAccount{
+    margin: 4rem 0 0 69rem;
+    font-size: 1.2rem;
+    font-weight: 700;
     color: var(--color-bg-variant);
+    z-index: -1;
 }
 
 .signup-form:before{
     content:" ";
     display: block;
-    height: 340px;
-    width: 22rem;
+    height: 34.7rem;
+    width: 27rem;
     position: absolute;
-    top: 20%;
-    left: 39.5%;
-    background: var(--header-color);
+    top: 12.2%;
+    left: 62%;
+    background: var(--header-background);
     z-index: -1;
-    border-radius: 0 0 3rem 3rem;
     opacity: 1;
-}
-
-.signup-form:after{
-    content:" ";
-    display: block;
-    height: 108px;
-    width: 22rem;
-    position: absolute;
-    top: 4%;
-    left: 39.5%;
-    background: var(--header-color);
-    z-index: -1;
-    border-radius: 3rem 3rem 0 0;
-    opacity: 0.8;
+    margin-bottom: -20rem;
 }
 
 .signup-form{
+    margin: -27.5rem 0 0 1.7rem;  
+}
+
+.user-signup-label{
+    color: var(--color-dark);
+    margin-left: 61.5rem;
     margin-top: 1rem;
 }
 
-.signup-label > .user-signup-label{
-    margin-top: -5rem;
-    margin-bottom: -4rem;
-    margin-left: -10rem;
-    font-size: 17px;
-    color: var(--color-dark);
+.signup-label > .user-signup-label {
+    margin-top: 1rem;
 }
 
-#signup-textbox > .signup-input{
-    margin-left: -12.5rem;
-    margin-top: 3rem;
+#password-textbox > .user-signup-label{
+    margin-top: -9.5rem;
+    margin-left: 56rem;
 }
 
-.signup-input{
-    margin-left: -4.5rem;
+#confirm-password-textbox > .user-signup-label{
+    margin-left: 61.5rem;
+    margin-top: -3.5rem;
+}
+
+.signup-input{     
+    margin-left: 61rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.7rem;
     height: 10%;
-    border-radius: 5px;
+    border-radius: 8px;
     text-indent: 5%;
-    width: 17.5rem;
+    width: var(--button);
     height: 2.5rem;
     background: var(--header-color);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#signup-submit-btn > .signup-btn-text{
-    margin-left: 6.5rem;
-    font-weight: 700;
-    color: var(--header-color); 
-    text-decoration: none;  
-}
-
-#signup-submit-btn{
-    margin-top: 2rem;
-}
-
-.signup-btn{
-    background-color: var(--color-bg-variant);
-    padding: 0.5rem 1rem;
+#password-textbox > .signup-input{
+    width: var(--button);
+    margin-left: 55.5rem;
+    margin-top: 0.2rem;
     border-radius: 8px;
-    width: var(--button-width);
-    transition: outline 200ms;
-    margin-top: 0.5rem;
-    margin-left: -10rem;
 }
 
-#confirm-password > .signup-input{
-    margin-left: -8.5rem;
+#confirm-password-textbox > .signup-input{
+    margin-left: 61rem;
+    margin-top: -1.7rem;
+    margin-bottom: -10rem;
+    border-radius: 8px;
+    width: var(--button);
 }
 
-.right-pane-signup > .signup-btn-link{
-    margin-left: 35rem;
+.signup-link{
+    margin: -9.5rem 0 0 82rem;
+    font-size: 1.2rem;
+}
+
+.signup-btn-link{
     text-decoration: none;
-    color: var(--header-color);
-}
-
-.right-pane-signup{
-    margin-top: 1rem;
+    color: var(--color-bg-variant);
+    font-weight: 700;    
 }
 
 .signup-btn-link:hover{
-    color: var(--color-bg-variant);
-    text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: var(--color-dark);
 }
 
 #signup-submit-btn:hover{
     outline: 1px solid var(--header-color);
 }
+
+ em:hover{
+    color: var(--color-secondary);
+}
+
+.column > .left-side-image{
+    height: 100%;
+    width: 100%;
+    margin: -3.8rem 0 0 0;
+}
+
+.column{
+    width: 50%;
+    margin-left: 10rem;
+    margin-top: 6.8rem;
+}
+
+.column .content{
+    position: absolute;
+    bottom: 4.5rem;
+    background: var(--color-bg-variant);
+    background: var(--color-dark, 0.5); 
+    width: 50%;
+    padding: 20px;
+    color: var(--header-color);
+    font-family: Poppins;   
+  }
+
+  .content h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .content p{
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  .button {
+    cursor: pointer;
+    color: #fff;
+    background: linear-gradient(to right, rgba(159,79,107,100), rgba(182,77,94,100));
+    border: 0;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 8px;
+    width: var(--button);
+    height: 2.8rem;
+    transition: outline 200ms;
+    margin-top: 10rem;
+    margin-left: 61.5rem;
+  }
+
+  error{
+    display: flex;
+    font-size: 10px;
+    color: #ff6774;
+    margin-left: 61.5rem;
+    margin-top: -0.2rem;
+    margin-bottom: -1rem;
+    font-size: 0.7rem;   
+  }
+
+  #confirm{
+    margin-top: 1.4rem;
+    margin-bottom: -5.5rem;
+  }
+
+  #choose{
+    margin-top: -0.3rem;
+    margin-left: 56rem;
+  }
+
+  #pwdEye{
+    color: var(--color-dark);
+    margin-left: 73.5rem;
+    margin-top: -2.5rem;
+    background: none;
+  }
+
+

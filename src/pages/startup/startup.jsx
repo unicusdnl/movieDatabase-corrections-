@@ -25,19 +25,19 @@ const Startup = () => {
             
             <div className="custom-btn">
               <img src={google} alt="google logo" className="custom-btn-img" />
-              <Link to="/signin" className='custom-btn-text'>Sign up with Google</Link>
+              <Link to="/signup" className='custom-btn-text'>Sign up with Google</Link>
             </div>
 
-            <div className="custom-btn" id='apple-signin-btn'>
+            <button className="custom-btn" id='apple-signin-btn'>
               <img src={apple} alt="apple logo" className="custom-btn-img" />
-              <Link to="/signin" className='custom-btn-text'>Sign up with Apple</Link>
-            </div>
+              <Link to="/signup" className='custom-btn-text'>Sign up with Apple</Link>
+            </button>
             
             <h3 id='signin-divider'>OR</h3>
 
-            <div className="custom-btn" id='mobile-signin-btn'>
+            <button className="custom-btn" id='mobile-signin-btn'>
               <Link to="/signin" className='custom-btn-text'>Sign up with Mobile</Link>
-            </div>
+            </button>
 
             <p className="privacy">
               By signing up, you agree to the <em>Terms of Service </em> and <em> Privacy Policy,</em> including <em> Cookie Use</em>.
@@ -47,9 +47,9 @@ const Startup = () => {
               Already have an account?
             </div>
 
-            <div className="custom-btn" id='signin-btn'>
+            <button className="custom-btn" id='signin-btn'>
               <Link to="/signin" className='custom-btn-text'>Sign in</Link>
-            </div>
+            </button>
 
           </div>
         </div>

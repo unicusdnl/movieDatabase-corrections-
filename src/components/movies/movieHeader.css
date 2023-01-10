@@ -1,0 +1,25 @@
+#movieHeader{
+    display: flex;
+    margin-bottom: -43rem;
+}
+
+.movieHeader_container{
+    height: 78%;
+    width: 85%;
+    border: 2px solid var(--color-dark);
+    margin: -5rem 0 0 7.5rem;
+}
+
+.movieHeader_content > p{
+    font-weight: 800;
+    font-size: 3.5rem;
+    margin-top: 15rem;
+    margin-left: 3rem;
+}
+
+.movieHeader_content p > small{
+    display: flex;
+    margin-top: -15rem;
+    font-weight: 500;
+    font-size: 1rem;
+}
