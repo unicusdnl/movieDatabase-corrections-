@@ -1,23 +1,25 @@
-#movieHeader{
+#hero{
     display: flex;
-    margin-bottom: -43rem;
+    margin-bottom: -42rem;
+    z-index: -1;
 }
 
-.movieHeader_container{
+.hero_container{
     height: 78%;
     width: 85%;
     border: 2px solid var(--color-dark);
-    margin: -5rem 0 0 7.5rem;
+    margin: -4.5rem 0 0 7.5rem;
+    z-index: -1;
 }
 
-.movieHeader_content > p{
+.hero_content > p{
     font-weight: 800;
     font-size: 3.5rem;
     margin-top: 15rem;
     margin-left: 3rem;
 }
 
-.movieHeader_content p > small{
+.hero_content p > small{
     display: flex;
     margin-top: -15rem;
     font-weight: 500;

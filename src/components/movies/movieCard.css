@@ -6,20 +6,22 @@
     box-sizing: border-box;
 }
 
-#movieCard{
+/* #movieCard{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 5rem 0 -2rem;
+    z-index: 1;
+} */
+
+/* .container > .ratings{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    margin: -0.5rem 0 0 -2rem;
-    z-index: 1;
-}
-
-.ratings{
-    display: flex;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     margin-left: -3rem;
-    margin-top: 16.5rem;
+    margin-top: -3.5rem;
     background: var(--header-color);
     color: var(--color-dark);
     border-radius: 80px;
@@ -28,29 +30,42 @@
     align-items: center;
     z-index: 1;
     width: 50%;
-    height: 15%;
+    height: 20%;
     box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
                 -6px -6px 10px -1px rgba(60, 60, 60, 0.7);
-}
+} */
 
-.container{
+/* .container{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    height: 18rem;
-    width: 12rem;
+    flex-wrap: wrap;
+    height: 50vh;
+    width: 11rem;
     margin-left: -1.5rem;
+    margin-right: -4rem;
     border-radius: 8px;
+    margin-top: 3rem;
 }
 
 .container img{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    height: 18rem;
+    height: 15rem;
     margin-left: 0;
-    width: 12rem;
+    width: 11rem;
     border-radius: 8px;
+    margin-right: -4rem;
+    margin-top: 3rem;
 }
 
+.movieTitle{
+    font-size: 0.9rem;
+} */
 
+.movieCard h5{
+    font-size: 0.85rem;
+    font-family: Poppins;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}

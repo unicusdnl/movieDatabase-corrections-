@@ -1,21 +1,14 @@
 import React from 'react'
 import './movieCard.css'
 
-const getPosterURL = (posterpath) => {
-
-    return `https://www.themoviedb.org/t/p/w220_and_h330_face${posterpath}`
-
-}
-
-const MovieCard = ({poster_path, name, vote_average})  => {
-  return <div className="container">
-       <img src={getPosterURL(poster_path)} alt={name}/>
-       <h3 className= 'text-md-left gap-5 '>{name}</h3>
-       <p className="ratings">{vote_average}</p> 
+const MovieCard = ({movie}) => {
+    const image_path = "https://image.tmdb.org/t/p/w500"
+  return (
+    <div className='movieCard'>
+        {movie.poster_path ? <img src={`${image_path}${movie.poster_path}`} alt=''/>:null}
+        <h5>{movie.title}</h5>
     </div>
-
-
-  
+  )
 }
 
 export default MovieCard

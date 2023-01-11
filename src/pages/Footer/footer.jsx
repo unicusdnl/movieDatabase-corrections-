@@ -8,7 +8,6 @@ import {RiSendPlaneFill} from 'react-icons/ri'
 
 class Footer extends Component {
   state = { 
-    id: ["1"],
     footerList: [ "About us", "FAQ", "Subscription"],
     footerMid: [ "Corporate Relation", "Contact us", "Help Center"],
     permalinks: [ "AiFillInstagram", "AiOutlineTwitter", "RiFacebookCircleFill"]

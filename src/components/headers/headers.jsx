@@ -5,7 +5,7 @@ class Header extends Component {
   state = { 
     whatsPopular: [ "Streaming", "On TV", "For Rent", "In Theatres" ],
     freeToWatch: [ "Movies", "TV"],
-    latestTrailesrs: ["Streaming", "On TV", "For Rent", "In Theatres" ],
+    latestTrailers: ["Streaming", "On TV", "For Rent", "In Theatres" ],
     trending: ["Today", "This Week"]
    } 
 
@@ -19,6 +19,9 @@ class Header extends Component {
           </li>
           <li className='headerList'>Free To Watch
           <ul id='tabs'>{this.state.freeToWatch.map(freeToWatch => <li>{freeToWatch}</li>)}</ul>
+          </li>
+          <li className='headerList'>Latest Trailers
+          <ul id='tabs'>{this.state.latestTrailers.map(latestTrailers => <li>{latestTrailers}</li>)}</ul>
           </li>
         </header>
       </section>

@@ -3,8 +3,9 @@ import logo from '../../images/logo.svg'
 import './subscription.css'
 import Left from '../../images/left.png'
 import {BsCheck2, BsBookmarkStarFill} from 'react-icons/bs'
+import {useForm} from "react-hook-form"
 
-const subscription = () => {
+const Subscription = () => {
   return (
     <div className='leftSubscribe'>
     <div className="col1">
@@ -37,10 +38,14 @@ const subscription = () => {
           <input id='subName' type="text" placeholder='Enter your email address'/>
           <button id="subBtn" type='submit'>Subscribe</button>
           
+          {/* <error id='subError'>
+                {errors.newPassword?.type === "required" && "*Enter your password"}
+              </error> */}
         </form>
     </div>
   </div>
   )
 }
 
-export default subscription
+
+export default Subscription

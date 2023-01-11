@@ -1,29 +1,66 @@
 import React, { useEffect, useState } from "react";
 import MovieCard from "./movieCard";
-import axios from "axios";
-
-const BASE_URL = 'https://api.themoviedb.org/3';
-const API_KEY = 'api_key=41467446ef4c8f2ffa78fc5c6692fbd5';
-const IMG_URL = 'https://www.themoviedb.org/t/p/w220_and_h330_face';
-const searchMovie = BASE_URL + '/search/movie' + API_KEY + '&language=en-US&page=1&include_adult=false'; 
+import './movieList.css'
+import tmdb from "../api/tmdb";
+import {GoPlay} from "react-icons/go"
 
 const MovieList = () => {
+    const api_key ='41467446ef4c8f2ffa78fc5c6692fbd5'
+    const image_path = "https://image.tmdb.org/t/p/original"
     const [ movies, setMovies] = useState ([])
+    const [ selectedMovies, setSelectedMovies] = useState ([])
+
 
     useEffect(() => {
-        //fectching action
-        axios.get( BASE_URL + '/tv/popular?' + API_KEY + '&language=en-US&page=1').then(response=>{
-            setMovies(response.data.results)
-        }).catch(err=>{setMovies(err)})
-    }, [])
+    const fetchMovies = async() => {
+        const {data} = await tmdb.get("/discover/movie?")
+        setMovies(data.results)
+        setSelectedMovies(data.results[6])
+    }
 
-    return <div className= "d-flex flex-row bd-highlight mb-3 gap-5 offset-md-1 overflow-auto">
-       
-        {movies.map ((movie, index) =>{
-            return <MovieCard key= {index} {...movie} />
-           
-        })}
-    </div>
+    fetchMovies()
+
+}, [])
+
+
+    // return <div className= "d-flex flex-row bd-highlight mb-3 gap-5 offset-md-1 overflow-auto">
+    //     {movies.map ((movie, index) =>{
+    //         return <MovieCard key= {index} {...movie} />
+    //     })}
+    // </div>
+
+    const renderMovies = () => (
+        movies.map(movie => (
+            <MovieCard
+            key={movie.id}
+            movie={movie}
+            />
+        ))
+    )
+    
+    return (
+        <div className="api">
+            <div className="search">
+                
+            </div>
+            <div className="hero" style= {{backgroundImage:`url('${image_path}${selectedMovies.backdrop_path}')`}}>
+                <div className="heroContent">
+                <h1>{selectedMovies.title}</h1>
+                <p>{selectedMovies.overview}</p>
+                <div className="buttons">
+                <button className={"moviePlay"}>Play Trailer</button>
+                <GoPlay id="play"/>
+                </div>
+            </div>
+            </div>
+        
+          <div className="container">
+            {renderMovies()}
+        </div>
+        </div>
+        
+    )
+    
   
 }
 
