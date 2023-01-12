@@ -1,8 +1,10 @@
 import React, {Component} from 'react'
 import './nav.css'
 import logo from '../../images/logo.svg'
-import {HiUserCircle, HiOutlineSearch} from 'react-icons/hi'
+import {HiUserCircle} from 'react-icons/hi'
 import {BsFillBellFill} from 'react-icons/bs'
+import {RiSearch2Line} from 'react-icons/ri'
+import {GrFormAdd} from 'react-icons/gr'
 
 class Nav extends Component{
   state={
@@ -30,8 +32,9 @@ render() {
         </li>      
       </nav>
 
-      <div className="avatar" >   
-        <HiOutlineSearch id='right-search'/>
+      <div className="avatar" >  
+        <GrFormAdd id='addUploads'/>
+        <RiSearch2Line id='right-search'/>
         <BsFillBellFill id='right-avatar'/>
         
         <li id='avatar-shape'>
